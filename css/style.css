@@ -5,7 +5,10 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  border: 0;
 }
 
 body {
@@ -24,14 +27,67 @@ a {
 }
 
 .container {
-  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 
-/*----------Start header----------*/
+/*----------header----------*/
+
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 777;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  z-index: 2;
+}
+
+.header__body {
+  position: relative;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 5;
+}
+
+.header__logo img {
+  display: block;
+}
+
+.header__menu {}
+
+.header__list {
+  display: flex;
+  position: relative;
+  z-index: 5;
+  list-style: none;
+}
+
+.header__link {
+  font-size: 1.6rem;
+  line-height: 4rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 4rem;
+}
 
 
 /* Бургер */
@@ -40,44 +96,14 @@ a {
   display: none;
 }
 
-/*----------End header----------*/
+p {
+  margin-bottom: 50px;
+}
 
-header {}
+#intro {
+  padding-top: 100px;
+}
 
-/*----------Start секции ----------*/
-
-
-/*----------End секции ----------*/
-
-
-/*----------Start секции ----------*/
-
-
-/*----------End секции ----------*/
-
-
-/*----------Start секции ----------*/
-
-
-/*----------End секции ----------*/
-
-
-/*----------Start секции ----------*/
-
-
-/*----------End секции ----------*/
-
-
-/*----------Start footer----------*/
-
-
-/*----------End footer----------*/
-
-
-/*----------Start Modal Windows----------*/
-
-
-/*----------End Modal Windows----------*/
 
 
 /*----------Кнопка Наверх----------*/
@@ -117,13 +143,91 @@ header {}
 
 @media only screen and (max-width: 1024px) {}
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 
   body.lock {
     overflow: hidden;
   }
 
   .header__burger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 20px;
+    z-index: 5;
+  }
+
+  .header__burger span {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  .header__burger::before {
+    top: 0;
+
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__burger.active span {
+    transform: scale(0);
+    transition: 0.3s;
+  }
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    padding-top: 70px;
+    transition: 0.3s;
+    overflow: auto;
+  }
+
+  .header__menu.active {
+    top: 0;
+  }
+
+  .header__list {
+    display: block;
+  }
+
+  .header__link {
+    padding-left: 1.5rem;
+  }
+
+
+
+  /* .header__burger {
     position: absolute;
     right: 0;
     z-index: 3;
@@ -198,10 +302,10 @@ header {}
   .header__list {
     display: block;
   }
-}
+} */
 
-@media only screen and (max-width: 880px) {}
+  @media only screen and (max-width: 880px) {}
 
-@media only screen and (max-width: 600px) {}
+  @media only screen and (max-width: 600px) {}
 
-@media only screen and (max-width: 400px) {}
+  @media only screen and (max-width: 400px) {}
