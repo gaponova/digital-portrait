@@ -15,6 +15,8 @@ body {
   margin: 0;
   padding: 0;
   font: 16px/1.3 'Montserrat', sans-serif;
+  background: rgba(5, 36, 49, 1);
+  color: #b1bdca;
 }
 
 img {
@@ -50,7 +52,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: grey;
+  background: rgba(5, 36, 49, 1);
   z-index: 2;
 }
 
@@ -72,8 +74,6 @@ a {
   display: block;
 }
 
-.header__menu {}
-
 .header__list {
   display: flex;
   position: relative;
@@ -89,7 +89,6 @@ a {
   padding: 1rem 4rem;
 }
 
-
 /* Бургер */
 
 .header__burger {
@@ -104,7 +103,30 @@ p {
   padding-top: 100px;
 }
 
+.bar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(5, 36, 49, 1);
+  z-index: 999;
+  animation: fixedMenu 1s forwards;
+  transition: 0.5s;
+}
 
+@keyframes fixedMenu {
+  0% {
+    opacity: 0;
+  }
+
+  /* 50% {
+    opacity: 35;
+  } */
+
+  100% {
+    opacity: 70;
+  }
+}
 
 /*----------Кнопка Наверх----------*/
 
@@ -206,15 +228,15 @@ p {
     top: -100%;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: #ccc;
+    background: rgba(5, 36, 49, 0.9);
     padding-top: 70px;
-    transition: 0.3s;
     overflow: auto;
+    transition: 0.5s;
   }
 
   .header__menu.active {
     top: 0;
+
   }
 
   .header__list {
@@ -225,87 +247,12 @@ p {
     padding-left: 1.5rem;
   }
 
+}
 
 
-  /* .header__burger {
-    position: absolute;
-    right: 0;
-    z-index: 3;
-    display: block;
-    width: 30px;
-    height: 20px;
-  }
 
-  .header__burger-middle {
-    content: "";
-    position: absolute;
-    top: 9px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    transition: 0.3s;
-  }
+@media only screen and (max-width: 880px) {}
 
-  .header__burger::before,
-  .header__burger::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    transition: 0.3s;
-  }
+@media only screen and (max-width: 600px) {}
 
-  .header__burger::before {
-    top: 0;
-  }
-
-  .header__burger::after {
-    bottom: 0;
-  }
-
-  .header__burger.active::before {
-    transform: rotate(45deg);
-    top: 9px;
-    transition: 0.3s;
-  }
-
-  .header__burger.active::after {
-    transform: rotate(-45deg);
-    bottom: 9px;
-    transition: 0.3s;
-  }
-
-  .header__burger.active .header__burger-middle {
-    transform: scale(0);
-    transition: 0.3s;
-  }
-
-  .header__menu {
-    position: fixed;
-    top: -100%;
-    left: 0;
-    overflow: auto;
-    width: 100%;
-    height: 100%;
-    background-color: #091724;
-    padding: 6.2rem 1rem 2rem 1rem;
-    transition: 0.5s;
-  }
-
-  .header__menu.active {
-    top: 0;
-  }
-
-  .header__list {
-    display: block;
-  }
-} */
-
-  @media only screen and (max-width: 880px) {}
-
-  @media only screen and (max-width: 600px) {}
-
-  @media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {}
