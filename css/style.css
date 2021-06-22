@@ -43,6 +43,8 @@ a {
   top: 0;
   left: 0;
   z-index: 777;
+  padding-top: 10px;
+  transition: 0.5s;
 }
 
 .header::before {
@@ -52,7 +54,6 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(5, 36, 49, 1);
   z-index: 2;
 }
 
@@ -74,11 +75,16 @@ a {
   display: block;
 }
 
+.header__menu {
+  margin-left: auto;
+}
+
 .header__list {
-  display: flex;
   position: relative;
-  z-index: 5;
+  display: flex;
+  align-items: center;
   list-style: none;
+  z-index: 5;
 }
 
 .header__link {
@@ -89,28 +95,36 @@ a {
   padding: 1rem 4rem;
 }
 
+.nav-order {
+  display: inline-block;
+  background-color: #FF2E60;
+  font-size: 1.6rem;
+  line-height: 3.7rem;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0px 20px;
+  margin-left: 39px;
+  z-index: 10;
+}
+
 /* Бургер */
 
 .header__burger {
   display: none;
 }
 
-p {
-  margin-bottom: 50px;
-}
 
-#intro {
-  padding-top: 100px;
-}
 
 .bar-fixed {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(5, 36, 49, 1);
+  background: rgba(5, 36, 49, 0.7);
   z-index: 999;
   animation: fixedMenu 1s forwards;
+  padding-top: 0;
   transition: 0.5s;
 }
 
@@ -126,6 +140,19 @@ p {
   100% {
     opacity: 70;
   }
+}
+
+/*----------intro----------*/
+
+
+.intro {
+  min-height: 920px;
+  background: rgba(5, 36, 49, 1);
+  background: url(../img/top-bg.jpg) center top no-repeat;
+  background-size: cover;
+  margin-top: -60px;
+  padding-top: 100px;
+  margin-top: -72px;
 }
 
 /*----------Кнопка Наверх----------*/
@@ -171,12 +198,21 @@ p {
     overflow: hidden;
   }
 
+  .header::before {
+    background: rgba(5, 36, 49, 0.9);
+  }
+
+  .header {
+    padding-top: 0;
+  }
+
   .header__burger {
     position: relative;
     display: block;
-    width: 30px;
+    min-width: 30px;
     height: 20px;
     z-index: 5;
+    order: 2;
   }
 
   .header__burger span {
@@ -228,15 +264,15 @@ p {
     top: -100%;
     left: 0;
     width: 100%;
-    background: rgba(5, 36, 49, 0.9);
+    background: rgba(5, 36, 49, 0.7);
     padding-top: 70px;
+    padding-bottom: 10px;
     overflow: auto;
     transition: 0.5s;
   }
 
   .header__menu.active {
     top: 0;
-
   }
 
   .header__list {
@@ -244,7 +280,19 @@ p {
   }
 
   .header__link {
+    display: block;
+    padding: 3px;
     padding-left: 1.5rem;
+  }
+
+  .nav-order {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  .intro {
+    background: url(../img/top-bg-mobile.jpg) center top no-repeat;
+    b
   }
 
 }
@@ -255,4 +303,18 @@ p {
 
 @media only screen and (max-width: 600px) {}
 
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {
+
+  .header__body {
+    flex-wrap: nowrap;
+  }
+
+  .header__logo img {
+    max-width: 90%;
+  }
+
+  .nav-order {
+    font-size: 14px;
+    padding: 0px 12px;
+  }
+}
