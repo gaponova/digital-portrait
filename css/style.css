@@ -122,7 +122,7 @@ a {
 
 
 .bar-fixed {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -296,6 +296,58 @@ a {
   color: #fff;
 }
 
+
+/*----------level----------*/
+
+.level {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+.level-info__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #B1BDCA;
+  margin-bottom: 11px;
+}
+
+.level-info__desc {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.6rem;
+  line-height: 39px;
+  font-weight: 400;
+  color: #B1BDCA;
+  margin-bottom: 50px;
+}
+
+/* Слайдер level-slider */
+
+.owl-carousel {
+  list-style: none;
+}
+
+.level-owl-carousel.owl-theme .owl-nav {
+  position: absolute;
+  top: -112px;
+  right: 50px;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background: transparent;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  margin-left: 55px;
+}
+
+
+
 /*----------Кнопка Наверх----------*/
 
 #toTop {
@@ -460,5 +512,10 @@ a {
   .nav-order {
     font-size: 14px;
     padding: 0px 12px;
+  }
+
+  .level-slider {
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
