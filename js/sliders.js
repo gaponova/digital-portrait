@@ -10,9 +10,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 5000,
     navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"],
-    dots: false
-
-    
-    
+    dots: false,
+    center: true
   });
 });

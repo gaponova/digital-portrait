@@ -317,6 +317,7 @@ a {
 
 .level-info__desc {
   margin: 0;
+  max-width: 949px;
   font-family: "Montserrat", sans-serif;
   font-size: 2.6rem;
   line-height: 39px;
@@ -332,9 +333,10 @@ a {
 }
 
 .level-owl-carousel.owl-theme .owl-nav {
+  min-width: 126px;
   position: absolute;
   top: -112px;
-  right: 50px;
+  right: 360px;
 }
 
 .owl-carousel .owl-nav button.owl-prev:hover,
@@ -378,6 +380,20 @@ a {
 }
 
 /*----------Адаптив----------*/
+
+@media only screen and (max-width: 1700px) {
+
+  .level-info__desc {
+    margin-bottom: 80px;
+  }
+
+  .level-owl-carousel.owl-theme .owl-nav {
+    position: absolute;
+    top: -83px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 @media only screen and (max-width: 1400px) {}
 
