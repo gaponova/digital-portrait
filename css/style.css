@@ -479,7 +479,7 @@ a {
 .trick {
   background-color: #052431;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 37px;
 }
 
 .trick__title {
@@ -524,6 +524,77 @@ a {
   font-weight: 400;
   color: #B1BDCA;
   margin-top: 7px;
+}
+
+
+/*----------for----------*/
+
+.for {
+  background-color: #061D27;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.for__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #B1BDCA;
+  margin-bottom: 50px;
+}
+
+.for__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.for-item {
+  margin: 0 15px 20px;
+  width: calc(33.33% - 30px);
+  background-color: #052431;
+  padding: 23px 20px 10px 55px;
+  border-radius: 10px;
+}
+
+.for-item__icon {
+  margin-bottom: 8px;
+}
+
+.for-item__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.for-item__list {
+
+  list-style: none;
+}
+
+.for-item__info {
+  position: relative;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 23px;
+  font-weight: 400;
+  color: #B1BDCA;
+  margin-bottom: 10px;
+}
+
+.for-item__info::before {
+  position: absolute;
+  content: url(../img/point.svg);
+  position: absolute;
+  top: 1px;
+  left: -31px;
 }
 
 
