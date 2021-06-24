@@ -474,6 +474,59 @@ a {
 }
 
 
+/*----------trick----------*/
+
+.trick {
+  background-color: #052431;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.trick__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #B1BDCA;
+  margin-bottom: 54px;
+}
+
+.trick__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.trick-item {
+  width: calc(33.33% - 30px);
+  margin: 0 15px 60px;
+}
+
+.trick-item__icon {
+  margin-left: 2px;
+  margin-bottom: 8px;
+}
+
+.trick-item__info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  line-height: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.trick-item__info_add {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 23px;
+  font-weight: 400;
+  color: #B1BDCA;
+  margin-top: 7px;
+}
+
+
 /*----------Кнопка Наверх----------*/
 
 #toTop {
