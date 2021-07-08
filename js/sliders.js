@@ -13,4 +13,14 @@ $(document).ready(function () {
     dots: false,
     center: true
   });
+
+  $(".reviews-owl-carousel").owlCarousel({
+   items: 1,
+   autoHeight:true,
+   loop: true,
+    nav: true,
+    autoplayTimeout: 5000,
+    navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"],
+    dots: true,
+  });
 });

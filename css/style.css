@@ -598,7 +598,6 @@ a {
 }
 
 
-
 /*----------rabana----------*/
 
 .rabana {
@@ -703,8 +702,6 @@ a {
   margin-right: 10px;
 }
 
-.rabana-voice__headset {}
-
 .rabana-item__desc {
   width: 270px;
   margin: 0 auto;
@@ -714,6 +711,108 @@ a {
   line-height: 22px;
   color: #B1BDCA;
 }
+
+
+/*----------reviews----------*/
+
+.reviews {
+  background-color: #061D27;
+  padding-top: 103px;
+  padding-bottom: 89px;
+}
+
+.reviews__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #B1BDCA;
+}
+
+.reviews-desc {
+  max-width: 800px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.4rem;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.reviews-slide {
+  display: flex;
+  background: #052431;
+  transition: 0.3s;
+}
+
+.reviews-slide-box_img {
+  min-width: 470px;
+}
+
+.reviews-slide-box_text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 5rem 5rem 5rem 3rem;
+}
+
+.reviews-slide-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.reviews-slide-reviews {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 23px;
+  font-weight: 400;
+  color: #B1BDCA;
+  margin-bottom: 10px;
+}
+
+.reviews-slide-link {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 120%;
+  color: #7EE8FF;
+  margin-top: auto;
+}
+
+.reviews-owl-carousel.owl-theme .owl-nav {
+  min-width: 126px;
+  position: absolute;
+  top: -112px;
+  right: 195px;
+}
+
+.reviews-owl-carousel.owl-theme .owl-dots {
+  margin-top: 25px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+  margin: 5px 7px;
+  background: transparent;
+  border: 1px solid #ff2e60;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #ff2e60;
+}
+
 
 /*----------Кнопка Наверх----------*/
 
@@ -762,7 +861,39 @@ a {
 
 @media only screen and (max-width: 1400px) {}
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+
+  .reviews {
+    text-align: center;
+  }
+
+  .reviews-slide {
+    display: block;
+    text-align: center;
+  }
+
+  .reviews-desc {
+    max-width: 915px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  .reviews-slide-img {
+    padding-top: 3rem;
+    margin: 0 auto;
+  }
+
+  .reviews-owl-carousel.owl-theme .owl-nav {
+    top: -83px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .owl-carousel .owl-item img {
+    width: auto;
+  }
+
+}
 
 @media only screen and (max-width: 1024px) {}
 
