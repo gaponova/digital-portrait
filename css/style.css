@@ -598,6 +598,123 @@ a {
 }
 
 
+
+/*----------rabana----------*/
+
+.rabana {
+  background-image: url(../img/author-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-top: 116px;
+  padding-bottom: 101px;
+}
+
+.rabana__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.rabana-item {
+  width: calc(50% - 30px);
+  margin: 0 15px 20px;
+}
+
+.rabana-item-2 {
+  width: calc(42% - 30px);
+  text-align: center;
+}
+
+.rabana-item-2 img {
+  margin-bottom: 33px;
+}
+
+.rabana-item__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #B1BDCA;
+  margin-bottom: 40px;
+}
+
+.rabana-item__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 73px;
+  color: #7EE8FF;
+  margin-bottom: 15px;
+}
+
+.rabana-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.rabana-list__item {
+  position: relative;
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 150%;
+  color: #B1BDCA;
+  padding-left: 26px;
+  margin-bottom: 15px;
+}
+
+.rabana-list__item::before {
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #7EE8FF;
+  border-radius: 50%;
+}
+
+.rabana-voice {
+  display: flex;
+  width: 274px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 18px;
+  color: #fff;
+  border: 1px solid #7EE8FF;
+  border-radius: 5px;
+  padding: 10px 19px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.rabana-voice:hover {
+  box-shadow: 0 0 30px rgb(126 232 255 / 50%);
+}
+
+.rabana-voice img {
+  margin-right: 10px;
+}
+
+.rabana-voice__headset {}
+
+.rabana-item__desc {
+  width: 270px;
+  margin: 0 auto;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 22px;
+  color: #B1BDCA;
+}
+
 /*----------Кнопка Наверх----------*/
 
 #toTop {
