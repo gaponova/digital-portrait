@@ -815,21 +815,72 @@ a {
 
 /*----------need----------*/
 
-.need {}
+.need {
+  background-color: #052431;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 
-.container {}
+.need__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #B1BDCA;
+  margin-bottom: 50px;
+}
 
-.need__title {}
+.need__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
 
-.need__row {}
+.need__wrap {
+  display: flex;
+  justify-content: center;
+  width: calc(50% - 30px);
+  border: 1px dashed #274350;
+  padding: 35px 10px 20px;
+  margin: 0 15px 20px;
+}
 
-.need__wrap {}
+.need-item {
 
-.need-item {}
+  color: #fff;
+  align-items: center;
+  text-align: center;
+}
 
-.need-item__title {}
+.need-item__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
 
-.need-item__or {}
+.need-item__title_mod1 {
+  margin-bottom: 50px;
+}
+
+.need-item__title_mod2 {
+  margin-bottom: 70px;
+}
+
+.need-item__or {
+  align-self: flex-end;
+  min-width: 50px;
+  min-height: 50px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 50px;
+  text-align: center;
+  background-color: #B1BDCA;
+  color: #000;
+  border-radius: 50%;
+  margin: 0 5px;
+  margin-top: 50px;
+  margin-bottom: 66px;
+}
 
 
 /*----------Кнопка Наверх----------*/
