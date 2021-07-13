@@ -882,6 +882,65 @@ a {
   margin-bottom: 66px;
 }
 
+/*----------how----------*/
+
+.how {
+  background-color: #052431;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.how__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #B1BDCA;
+  margin-bottom: 42px;
+}
+
+.how__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.how-item {}
+
+.how-item__title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.how-item__video {
+  display: block;
+  position: relative;
+}
+
+.how-item__video::after {
+  display: block;
+  width: 103px;
+  height: 103px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: url(../img/play.svg) no-repeat 0 0;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.how-item__video:hover.how-item__video::after {
+  top: 48%;
+}
+
+.how-item__img {}
+
 
 /*----------Кнопка Наверх----------*/
 
