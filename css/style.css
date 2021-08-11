@@ -991,7 +991,125 @@ a {
   left: -30px;
 }
 
-.about-test {}
+.about-test {
+  text-align: center;
+  padding: 100px 0 50px;
+}
+
+.about-test__info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  line-height: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 29px;
+}
+
+.form-test {
+  border: 1px dashed #274350;
+  background: #052431;
+  border-radius: 1rem;
+  padding: 30px 60px;
+}
+
+.form-test__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.form-test__item {
+  width: calc(33.33% - 30px);
+  margin: 0 15px 20px;
+}
+
+.form-test__field {
+  position: relative;
+  border: 1px solid #7ee8ff;
+  border-radius: 6px;
+  padding: 15px 12px 15px 40px;
+}
+
+.form-test__field::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-test__field_email {
+  background: url(../img/envelope.svg) left 1.2rem center no-repeat;
+}
+
+.form-test__field_phone {
+  background: url(../img/icon-phone.svg) left 1.2rem center no-repeat;
+}
+
+.form-test__btn {
+  display: inline-block;
+  background-color: #FF2E60;
+  font-size: 1.6rem;
+  line-height: 3.7rem;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 6px 20px;
+  cursor: pointer;
+}
+
+.form-personal {}
+
+/* Стилизация чекбокса */
+
+.form-personal__check {
+  display: none;
+}
+
+.form-personal__label {
+  position: relative;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 11px;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 30px;
+}
+
+.form-personal__check+label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.form-personal__check:checked+label::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../img/check-1\ .svg) 5px 6px no-repeat transparent;
+}
+
+.form-personal__agree {}
+
+.form-personal__link {
+  color: #7ee8ff;
+  text-decoration: none;
+  border-bottom: 1px dashed #7ee8ff;
+  cursor: pointer;
+}
 
 
 
