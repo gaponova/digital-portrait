@@ -991,6 +991,8 @@ a {
   left: -30px;
 }
 
+/* about-test */
+
 .about-test {
   text-align: center;
   padding: 100px 0 50px;
@@ -1009,7 +1011,7 @@ a {
   border: 1px dashed #274350;
   background: #052431;
   border-radius: 1rem;
-  padding: 30px 60px;
+  padding: 30px 60px 36px;
 }
 
 .form-test__row {
@@ -1111,9 +1113,101 @@ a {
   cursor: pointer;
 }
 
-
+/* about-content */
 
 .about-content {}
+
+/* accordion */
+
+.accordion {}
+
+.tabs {
+  overflow: hidden;
+}
+
+.tab {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #314255;
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+
+.tab:last-child {
+  border: none;
+}
+
+.tab-label {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 5rem 0;
+
+}
+
+.tab-label::after {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  content: "";
+  background: url(../img/icon-plus.svg) center center no-repeat;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  transition: all .2s;
+}
+
+.tab-label__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 27px;
+  font-weight: 500;
+  color: #7EE8FF;
+}
+
+.tab-label__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tab-label__time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 22px;
+  font-weight: 500;
+  color: #7EE8FF;
+  margin-bottom: 30px;
+}
+
+.tab-content {
+  max-height: 0;
+  transition: all .2s;
+  margin-top: -30px;
+}
+
+/* checked */
+
+input:checked+.tab-label {}
+
+input:checked+.tab-label::after {
+  transform: rotate(45deg);
+  transition: all .2s;
+}
+
+
+input:checked~.tab-content {
+  max-height: 100vh;
+  transition: all .2s;
+}
 
 
 /*----------Кнопка Наверх----------*/
