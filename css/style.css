@@ -1148,7 +1148,7 @@ a {
   width: 100%;
   cursor: pointer;
   padding: 5rem 0;
-
+  transition: all .3s;
 }
 
 .tab-label::after {
@@ -1188,27 +1188,143 @@ a {
   margin-bottom: 30px;
 }
 
-.tab-content {
-  max-height: 0;
-  transition: all .2s;
-  margin-top: -30px;
-}
-
 /* checked */
 
-input:checked+.tab-label {}
-
-input:checked+.tab-label::after {
-  transform: rotate(45deg);
-  transition: all .2s;
+input:checked+.tab-label {
+  padding-bottom: 20px;
+  transition: all .3s;
 }
 
+input:checked+.tab-label::after {
+  transform: rotate(135deg);
+  transition: all .2s;
+}
 
 input:checked~.tab-content {
   max-height: 100vh;
   transition: all .2s;
 }
 
+.tab-content {
+  max-height: 0;
+  transition: all .2s;
+  margin-top: -30px;
+}
+
+.tab-content__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tab-content__item {
+  flex-basis: 500px;
+}
+
+.tab-content__item:last-child {
+  flex-basis: 570px;
+}
+
+.tab-content__item-info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 22.5px;
+  font-weight: 500;
+  color: #b1bdca;
+  margin-bottom: 10px;
+}
+
+.tab-content__item-info:last-child {
+  margin-bottom: 50px;
+}
+
+.tab-content-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tab-content-list__item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 22.5px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.tab-content-list__number {
+  color: #7ee8ff;
+  margin-right: 30px;
+}
+
+.homework {
+  margin-top: 40px;
+
+}
+
+.homework-task {
+  margin-bottom: 40px;
+}
+
+.homework-task__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 22.5px;
+  font-weight: 700;
+  color: #7ee8ff;
+  margin-bottom: 10px;
+}
+
+.homework-task__info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 22.5px;
+  font-weight: 500;
+  color: #b1bdca;
+  margin-bottom: 10px;
+}
+
+.homework-result {}
+
+.homework-result__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  line-height: 22.5px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.homework-result__info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 22.5px;
+  font-weight: 500;
+  color: #b1bdca;
+  margin-bottom: 10px;
+}
+
+/*homework-slider*/
+
+.one-chapter {
+  position: relative;
+}
+
+.homework1-slider {}
+
+.homework1-owl-carousel.owl-theme .owl-nav {
+  min-width: 126px;
+  position: absolute;
+  top: -112px;
+  right: 0;
+}
+
+
+
+.homework1-owl-carousel .owl-nav.disabled {
+  display: block;
+}
 
 /*----------Кнопка Наверх----------*/
 
