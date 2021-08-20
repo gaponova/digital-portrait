@@ -1122,7 +1122,7 @@ a {
 .accordion {}
 
 .tabs {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .tab {
@@ -1185,8 +1185,15 @@ a {
   line-height: 22px;
   font-weight: 500;
   color: #7EE8FF;
-  margin-bottom: 30px;
 }
+
+.tab-content {
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+}
+
 
 /* checked */
 
@@ -1201,14 +1208,10 @@ input:checked+.tab-label::after {
 }
 
 input:checked~.tab-content {
-  max-height: 100vh;
-  transition: all .2s;
-}
-
-.tab-content {
-  max-height: 0;
-  transition: all .2s;
-  margin-top: -30px;
+  height: auto;
+  overflow: visible;
+  z-index: 10;
+  opacity: 1;
 }
 
 .tab-content__row {
@@ -1285,8 +1288,6 @@ input:checked~.tab-content {
   margin-bottom: 10px;
 }
 
-.homework-result {}
-
 .homework-result__title {
   font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
@@ -1307,12 +1308,6 @@ input:checked~.tab-content {
 
 /*homework-slider*/
 
-.one-chapter {
-  position: relative;
-}
-
-.homework1-slider {}
-
 .homework1-owl-carousel.owl-theme .owl-nav {
   min-width: 126px;
   position: absolute;
@@ -1320,10 +1315,52 @@ input:checked~.tab-content {
   right: 0;
 }
 
-
-
 .homework1-owl-carousel .owl-nav.disabled {
   display: block;
+}
+
+.task-1 {
+  border-radius: 1rem;
+  text-align: center;
+  background: #052431;
+  padding: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 50px;
+}
+
+.task-1__info {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 85px;
+  margin-bottom: 30px;
+}
+
+.task-1__info::before {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  content: "";
+  background: url(../img/star.svg) no-repeat;
+  width: 40px;
+  height: 48px;
+}
+
+.task-1__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.task-1__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  line-height: 36px;
+  font-weight: 700;
+  color: #7ee8ff;
 }
 
 /*----------Кнопка Наверх----------*/
