@@ -1194,13 +1194,17 @@ a {
   opacity: 0;
 }
 
+.tab-content_4 {
+  padding-bottom: 100px;
+}
+
 
 /* checked */
 
-input:checked+.tab-label {
+/* input:checked+.tab-label {
   padding-bottom: 20px;
   transition: all .3s;
-}
+} */
 
 input:checked+.tab-label::after {
   transform: rotate(135deg);
@@ -1297,13 +1301,17 @@ input:checked~.tab-content {
   margin-bottom: 40px;
 }
 
+.homework-result__title_2 {
+  margin-bottom: 10px;
+}
+
 .homework-result__info {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   line-height: 22.5px;
   font-weight: 500;
   color: #b1bdca;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 /*homework-slider*/
@@ -1361,6 +1369,122 @@ input:checked~.tab-content {
   line-height: 36px;
   font-weight: 700;
   color: #7ee8ff;
+}
+
+.second-chapter {}
+
+.second-chapter__row,
+.third-chapter__row,
+.fourth-chapter__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.second-chapter__item,
+.third-chapter__item,
+.fourth-chapter__item {
+  position: relative;
+  width: 48.9%;
+}
+
+.second-chapter__item img,
+.third-chapter__item img,
+.fourth-chapter__item img {
+  display: block;
+}
+
+.second-chapter__item_1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  background: url(../img/bonus-22a.jpg);
+  background-size: cover;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.second-chapter__item_2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  background: url(../img/bonus-22b.jpg);
+  background-size: cover;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.third-chapter__item_1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  background: url(../img/bonus-3aa.jpg);
+  background-size: cover;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.third-chapter__item_2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  background: url(../img/bonus-3bb.jpg);
+  background-size: cover;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.fourth-chapter__item_1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  background: url(../img/bonus-4aa.jpg);
+  background-size: cover;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.fourth-chapter__item_2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  background: url(../img/bonus-4bb.jpg);
+  background-size: cover;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.second-chapter__item_1:hover.second-chapter__item_1::before,
+.second-chapter__item_2:hover.second-chapter__item_2::before,
+.third-chapter__item_1:hover.third-chapter__item_1::before,
+.third-chapter__item_2:hover.third-chapter__item_2::before,
+.fourth-chapter__item_1:hover.fourth-chapter__item_1::before,
+.fourth-chapter__item_2:hover.fourth-chapter__item_2::before {
+  opacity: 1;
 }
 
 /*----------Кнопка Наверх----------*/
