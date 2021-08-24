@@ -1487,6 +1487,50 @@ input:checked~.tab-content {
   opacity: 1;
 }
 
+
+/*----------certificate ----------*/
+
+.certificate {
+  padding: 100px 0;
+}
+
+.certificate__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.certificate-info {
+  max-width: 470px;
+  margin: 0 15px 20px;
+}
+
+.certificate-info__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #B1BDCA;
+  margin-bottom: 33px;
+}
+
+.certificate-info__desc {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 150%;
+  color: #fff;
+}
+
+.certificate__img {
+  margin: 0 15px 20px;
+  box-shadow: 0px 4px 80px #263341;
+  border-radius: 2rem;
+}
+
 /*----------Кнопка Наверх----------*/
 
 #toTop {
