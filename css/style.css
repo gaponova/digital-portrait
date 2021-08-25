@@ -1840,6 +1840,46 @@ input:checked~.tab-content {
   background: #052431 url(../img/3.png) no-repeat right 30px bottom;
 }
 
+/*----------guarantee----------*/
+
+.guarantee {
+  padding: 100px 0;
+}
+
+.guarantee__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guarantee-info {
+  width: 55%;
+}
+
+.guarantee-info__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #B1BDCA;
+  margin-bottom: 33px;
+}
+
+.guarantee-info__desc {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 150%;
+  color: #fff;
+}
+
+.guarantee-img {
+  width: 35%;
+}
+
 
 /*----------Кнопка Наверх----------*/
 
