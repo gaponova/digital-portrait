@@ -1060,6 +1060,11 @@ a {
   border-radius: 5px;
   padding: 6px 20px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-test__btn:hover {
+  box-shadow: 0 0 30px rgb(255 46 96 / 50%);
 }
 
 .form-personal {}
@@ -1491,7 +1496,7 @@ input:checked~.tab-content {
 /*----------certificate ----------*/
 
 .certificate {
-  padding: 100px 0;
+  padding: 100px 0 80px;
 }
 
 .certificate__row {
@@ -1534,7 +1539,215 @@ input:checked~.tab-content {
 
 /*----------rate ----------*/
 
+.rate {
+  background-color: #061D27;
+  padding: 86px 0 80px;
+}
 
+.rate__title {
+  margin: 0;
+  max-width: 855px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #B1BDCA;
+  margin-bottom: 33px;
+}
+
+.rate__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: -60px -15px 0;
+}
+
+.rate-item {
+  width: calc(33.33% - 30px);
+  background: #052431;
+  margin: 0 15px 20px;
+  padding: 40px 30px;
+}
+
+.rate-name {}
+
+.rate-name__set {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.rate-name__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 37px;
+  text-align: center;
+  color: #7EE8FF;
+  margin-bottom: 30px;
+}
+
+.rate-list {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.rate-list__item,
+.rate-list__item_plus {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 18px;
+  color: #B1BDCA;
+  padding-left: 22px;
+  margin-bottom: 20px;
+}
+
+.rate-list__item::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/star-small.svg)no-repeat;
+}
+
+.rate-list__item_plus::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url(../img/plus.svg) no-repeat;
+}
+
+.rate-list__item_divider {
+  max-width: 269px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #4B5A68;
+}
+
+.rate-price {
+  text-align: center;
+}
+
+.rate-price__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 2.6rem;
+  line-height: 32px;
+  margin-right: 10px;
+}
+
+.rate-price__real {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 32px;
+  color: #fff;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.rate-price__sale {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 32px;
+  color: #7EE8FF;
+}
+
+.rate-btn {
+  display: inline-block;
+  width: 176px;
+  background-color: #FF2E60;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+  margin: 30px 0 20px;
+  transition: 0.3s;
+}
+
+.rate-btn:hover {
+  box-shadow: 0 0 30px rgb(255 46 96 / 50%);
+}
+
+
+
+
+
+.price-info {
+  text-align: center;
+}
+
+.price-info__show {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 16px;
+  color: #B1BDCA;
+  margin-right: 10px;
+}
+
+.price-info__currency {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 16px;
+  color: #7EE8FF;
+  margin-right: 6px;
+}
+
+.price-info__currency:last-child {
+  margin-right: 0;
+}
+
+.price-info__credit {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #7EE8FF;
+  border-radius: 5px;
+  padding: 13px 19px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.price-info__credit:hover {
+  box-shadow: 0 0 30px rgb(126 232 255 / 50%);
+}
+
+.price-info__debit {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 16px;
+  color: #B1BDCA;
+  margin-right: 10px;
+}
 
 
 
@@ -1549,18 +1762,18 @@ input:checked~.tab-content {
   right: 75px;
   cursor: pointer;
   display: none;
-  background: #15293e;
+  background: #052431;
   font-size: 22px;
   line-height: 50px;
   text-align: center;
-  color: #FFC700;
+  color: #7ee8ff;
   border-radius: 50%;
   z-index: 10;
 }
 
 #toTop:hover {
-  background: #FFC700;
-  color: #101F2E;
+  background: #7ee8ff;
+  color: #052431;
 }
 
 #toTop:focus,
