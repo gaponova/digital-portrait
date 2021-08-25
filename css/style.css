@@ -1750,6 +1750,95 @@ input:checked~.tab-content {
 }
 
 
+/*----------platform----------*/
+
+.platform {
+  background-color: #061D27;
+  padding: 80px 0;
+}
+
+.platform__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 33px;
+  text-align: center;
+}
+
+.platform__subtitle {
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.platform-items {}
+
+.platform-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #052431;
+  margin-bottom: 30px;
+}
+
+.platform-item1 {
+  background: #052431 url(../img/1.png) no-repeat right 30px bottom;
+}
+
+.platform-item__img {
+  width: 42%;
+  text-align: center;
+}
+
+.platform-item__img img {
+  display: block;
+  margin: 0 auto;
+}
+
+.platform-item__info {
+  width: 58%;
+  padding: 0 80px 0 10px;
+}
+
+.platform-item__info-img {
+  margin-bottom: 20px;
+}
+
+.platform-item__info-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.platform-item__info-desc {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #B1BDCA;
+}
+
+.platform-item2 {
+  background: #052431 url(../img/2.png) no-repeat right 30px bottom;
+}
+
+.platform-item3 {
+  background: #052431 url(../img/3.png) no-repeat right 30px bottom;
+}
 
 
 /*----------Кнопка Наверх----------*/
@@ -1767,6 +1856,7 @@ input:checked~.tab-content {
   line-height: 50px;
   text-align: center;
   color: #7ee8ff;
+  /* border: 1px solid #7ee8ff; */
   border-radius: 50%;
   z-index: 10;
 }
