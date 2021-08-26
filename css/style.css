@@ -1067,8 +1067,6 @@ a {
   box-shadow: 0 0 30px rgb(255 46 96 / 50%);
 }
 
-.form-personal {}
-
 /* Стилизация чекбокса */
 
 .form-personal__check {
@@ -1109,8 +1107,6 @@ a {
   background: url(../img/check-1\ .svg) 5px 6px no-repeat transparent;
 }
 
-.form-personal__agree {}
-
 .form-personal__link {
   color: #7ee8ff;
   text-decoration: none;
@@ -1120,11 +1116,7 @@ a {
 
 /* about-content */
 
-.about-content {}
-
 /* accordion */
-
-.accordion {}
 
 .tabs {
   /* overflow: hidden; */
@@ -1376,8 +1368,6 @@ input:checked~.tab-content {
   color: #7ee8ff;
 }
 
-.second-chapter {}
-
 .second-chapter__row,
 .third-chapter__row,
 .fourth-chapter__row {
@@ -1569,8 +1559,6 @@ input:checked~.tab-content {
   margin: 0 15px 20px;
   padding: 40px 30px;
 }
-
-.rate-name {}
 
 .rate-name__set {
   font-family: "Montserrat", sans-serif;
@@ -1780,8 +1768,6 @@ input:checked~.tab-content {
   margin-bottom: 3rem;
 }
 
-.platform-items {}
-
 .platform-item {
   display: flex;
   flex-wrap: wrap;
@@ -1878,6 +1864,64 @@ input:checked~.tab-content {
 
 .guarantee-img {
   width: 35%;
+}
+
+/*----------questions----------*/
+
+.questions {
+  background: #061d27;
+  padding: 80px 0;
+}
+
+.questions__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.questions-items {
+  width: calc(44% - 30px);
+  margin: 0 15px 20px;
+}
+
+.questions__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  line-height: 61px;
+  font-weight: 700;
+  color: #B1BDCA;
+  margin-bottom: 50px;
+}
+
+.questions-item {
+  margin-bottom: 40px;
+}
+
+.questions-item__title {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #B1BDCA;
+  margin-bottom: 12px;
+}
+
+.questions-item__info {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #B1BDCA;
+}
+
+.questions-item__link {
+  color: #7ee8ff;
+  text-decoration: none;
 }
 
 
