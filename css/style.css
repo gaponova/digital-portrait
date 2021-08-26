@@ -1899,6 +1899,10 @@ input:checked~.tab-content {
   margin-bottom: 40px;
 }
 
+.questions-item:last-child {
+  margin-bottom: 0;
+}
+
 .questions-item__title {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -1922,6 +1926,107 @@ input:checked~.tab-content {
 .questions-item__link {
   color: #7ee8ff;
   text-decoration: none;
+}
+
+
+/*----------footer----------*/
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+
+  /* Grey */
+
+  color: #B1BDCA;
+
+  padding: 70px 0;
+}
+
+.footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.footer-item {
+  width: calc(33.33% - 30px);
+  margin: 0 15px 20px;
+}
+
+.footer-logo {}
+
+.footer-logo__img {
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+.footer-logo__info {}
+
+.footer-links {}
+
+.footer-social {
+  margin-bottom: 15px;
+}
+
+.footer-social__network {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.footer-services {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.footer-service__link,
+.footer-service__support {
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #B1BDCA;
+  margin-bottom: 1px;
+  text-decoration: underline;
+}
+
+.footer-service__support {
+  text-decoration: none;
+}
+
+.footer-service__link_email {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.footer-phones {}
+
+.footer-phones__call {
+  margin-bottom: 4px;
+}
+
+.footer-phones__number {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  color: #B1BDCA;
+  margin-bottom: 10px;
+}
+
+.footer-phones__time {
+  margin-bottom: 15px;
 }
 
 
