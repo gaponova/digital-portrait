@@ -9,6 +9,8 @@
   padding: 0;
   box-sizing: border-box;
   border: 0;
+  border: none;
+  outline: none;
 }
 
 .hidden {
@@ -2110,9 +2112,33 @@ input:checked~.tab-content {
     width: auto;
   }
 
+  .certificate__img {
+    width: 60%;
+  }
+
 }
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+  .how {
+    text-align: center;
+  }
+
+  .how__row {
+    justify-content: center;
+  }
+
+  .how-item:first-child {
+    margin-bottom: 30px;
+  }
+
+  .form-test__item {
+    width: calc(40% - 30px);
+  }
+
+  .tab-content-list {
+    margin-bottom: 30px;
+  }
+}
 
 @media only screen and (max-width: 991px) {
 
@@ -2212,8 +2238,246 @@ input:checked~.tab-content {
     margin-right: 15px;
   }
 
+  .online-course__course {
+    font-size: 2rem;
+  }
+
+  .intro-title__main,
+  .intro-title__color {
+    font-size: 5rem;
+    line-height: 40px;
+  }
+
+  .intro-title__size {
+    font-size: 3.5rem;
+    line-height: 45px;
+  }
+
+  .intro-features {
+    justify-content: center;
+  }
+
   .intro-feature {
+    width: calc(34% - 30px);
+  }
+
+  .level,
+  .learn,
+  .for,
+  .reviews,
+  .need,
+  .how,
+  .about-top,
+  .about-test,
+  .certificate,
+  .rate,
+  .platform,
+  .guarantee,
+  .questions {
+    padding: 70px 0;
+  }
+
+  .level-info__title,
+  .learn__title,
+  .trick__title,
+  .for__title,
+  .rabana-item__title,
+  .reviews__title,
+  .need__title,
+  .how__title,
+  .about-top-list__title,
+  .certificate-info__title,
+  .rate__title,
+  .platform__title,
+  .guarantee-info__title,
+  .questions__title {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+  }
+
+  .rabana-item__subtitle {
+    font-size: 5rem;
+  }
+
+  .learn__row {
+    max-width: 720px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .learn-item {
     width: calc(50% - 30px);
+  }
+
+  .trick__row {
+    justify-content: center;
+  }
+
+  .trick-item {
+    width: calc(40% - 30px);
+    text-align: center;
+  }
+
+  .for__row {
+    justify-content: space-around;
+  }
+
+  .for-item {
+    width: calc(80% - 30px);
+  }
+
+  .rabana {
+    padding: 70px 0;
+  }
+
+  .rabana__row {
+    justify-content: space-around;
+  }
+
+  .rabana-item,
+  .rabana-item-2 {
+    width: calc(80% - 30px);
+    text-align: center;
+  }
+
+  .rabana-item:first-child {
+    margin-bottom: 40px;
+  }
+
+  .rabana-list {
+    text-align: left;
+  }
+
+  .rabana-voice {
+    margin: 0 auto;
+  }
+
+  .reviews-desc {
+    font-size: 2.5rem;
+    margin-bottom: 90px;
+  }
+
+  .reviews-slide-box_text {
+    text-align: left;
+  }
+
+  .need__row {
+    justify-content: space-around;
+  }
+
+  .need__wrap {
+    width: calc(51% - 30px);
+  }
+
+  .form-test {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .form-test__item {
+    width: calc(100% - 30px);
+  }
+
+  .tabs {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .second-chapter__row,
+  .third-chapter__row,
+  .fourth-chapter__row {
+    justify-content: center;
+  }
+
+  .second-chapter__item,
+  .third-chapter__item,
+  .fourth-chapter__item {
+    width: 51%;
+    margin-bottom: 20px;
+  }
+
+  .homework-result {
+    text-align: center;
+  }
+
+  .certificate__row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .certificate-info,
+  .certificate__img {
+    max-width: 600px;
+  }
+
+  .rate__title {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 45px;
+    margin-bottom: 80px;
+  }
+
+  .rate__row {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .rate-item {
+    width: calc(50% - 30px);
+  }
+
+  .platform__subtitle {
+    font-size: 2rem;
+  }
+
+  .platform-item {
+    max-width: 720px;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .platform-item__info {
+    padding: 50px 10px;
+  }
+
+  .guarantee__row {
+    display: block;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .guarantee-info,
+  .guarantee-img {
+    width: 100%;
+  }
+
+  .guarantee-info {
+    margin-bottom: 30px;
+  }
+
+  .questions__row {
+    display: block;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .questions-items {
+    width: 100%;
+  }
+
+  .footer-items {
+    display: block;
+  }
+
+  .footer-item {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 
 }
