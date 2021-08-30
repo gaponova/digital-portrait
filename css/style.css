@@ -2806,6 +2806,20 @@ input:checked~.tab-content {
     width: 100%;
   }
 
+  .need__wrap {
+    display: block;
+  }
+
+  .need-item__or {
+    width: 50px;
+    display: block;
+    margin: 10px auto 20px;
+  }
+
+  .need-item__title_mod2 {
+    margin-bottom: 40px;
+  }
+
   .author {
     margin-bottom: 20px;
   }
