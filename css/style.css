@@ -2819,7 +2819,7 @@ input:checked~.tab-content {
   }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 400px) {
 
   .header__body {
     flex-wrap: nowrap;
@@ -2828,6 +2828,18 @@ input:checked~.tab-content {
   .intro-title__main,
   .intro-title__color {
     font-size: 3rem;
+    line-height: 20px;
+  }
+
+  .intro-title__size {
+    font-size: 2rem;
+    line-height: 10px;
+  }
+
+  .online-course__subtitle {
+    font-size: 1.6rem;
+    line-height: 20px;
+    margin-bottom: 15px;
   }
 
   .nav-order {
@@ -2838,6 +2850,14 @@ input:checked~.tab-content {
   .level-slider {
     max-width: 90%;
     margin: 0 auto;
+  }
+
+  .about-test__info {
+    line-height: 34px;
+  }
+
+  .form-test__btn {
+    padding: 6px 15px;
   }
 
   .platform {
@@ -2859,11 +2879,20 @@ input:checked~.tab-content {
   }
 
   .reviews-slide-box_text {
-    padding: 0;
+    padding: 15px;
+  }
+
+  .tab-label::after {
+    width: 2rem;
+    height: 2rem;
   }
 
   .form-test {
     padding: 10px;
+  }
+
+  .form-personal__label {
+    line-height: 20px;
   }
 
   .platform-item__img,
@@ -2878,6 +2907,11 @@ input:checked~.tab-content {
   .questions-item__info,
   .questions-item__link {
     font-size: 1.1rem;
-    ;
   }
+
+  footer {
+    text-align: center;
+    padding: 40px 15px;
+  }
+
 }
