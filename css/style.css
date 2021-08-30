@@ -2810,8 +2810,12 @@ input:checked~.tab-content {
     margin-bottom: 20px;
   }
 
+  .trick-item {
+    margin-bottom: 30px;
+  }
+
   .form-test__btn {
-    padding: 6px 8px;
+    padding: 12px 8px;
     font-size: 1.2rem;
     line-height: 150%;
   }
@@ -2827,6 +2831,14 @@ input:checked~.tab-content {
   .tab-label::after {
     width: 2rem;
     height: 2rem;
+  }
+
+  .tab-content-list__item {
+    font-size: 12px;
+  }
+
+  .task-1__text {
+    margin-bottom: 20px;
   }
 
   .rate-price__text,
