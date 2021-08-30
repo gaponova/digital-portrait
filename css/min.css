@@ -1,5 +1,5 @@
 :root {
-  font-size: 10px;
+  font-size: 10px
 }
 
 *,
@@ -7,15 +7,16 @@
 *::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 0;
   border: none;
-  outline: none;
+  outline: none
 }
 
 .hidden {
   position: absolute;
-  top: -100%;
+  top: -100%
 }
 
 body {
@@ -23,26 +24,23 @@ body {
   padding: 0;
   font: 16px/1.3 'Montserrat', sans-serif;
   background: rgba(5, 36, 49, 1);
-  color: #b1bdca;
+  color: #b1bdca
 }
 
 img {
   max-width: 100%;
-  height: auto;
+  height: auto
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px
 }
-
-
-/*----------header----------*/
 
 .header {
   position: sticky;
@@ -51,7 +49,9 @@ a {
   left: 0;
   z-index: 777;
   padding-top: 10px;
-  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s
 }
 
 .header::before {
@@ -61,37 +61,48 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 2
 }
 
 .header__body {
   position: relative;
   height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 
 .header__logo {
   position: relative;
-  z-index: 5;
+  z-index: 5
 }
 
 .header__logo img {
-  display: block;
+  display: block
 }
 
 .header__menu {
-  margin-left: auto;
+  margin-left: auto
 }
 
 .header__list {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   list-style: none;
-  z-index: 5;
+  z-index: 5
 }
 
 .header__link {
@@ -99,7 +110,7 @@ a {
   line-height: 4rem;
   color: #fff;
   text-decoration: none;
-  padding: 1rem 4rem;
+  padding: 1rem 4rem
 }
 
 .nav-order {
@@ -110,47 +121,49 @@ a {
   color: #fff;
   font-weight: 700;
   border-radius: 5px;
-  padding: 0px 20px;
+  padding: 0 20px;
   margin-left: 39px;
-  z-index: 10;
+  z-index: 10
 }
-
-/* Бургер */
 
 .header__burger {
-  display: none;
+  display: none
 }
-
-
 
 .bar-fixed {
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(5, 36, 49, 0.7);
+  background: rgba(5, 36, 49, .7);
   z-index: 999;
+  -webkit-animation: fixedMenu 1s forwards;
   animation: fixedMenu 1s forwards;
   padding-top: 0;
-  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s
+}
+
+@-webkit-keyframes fixedMenu {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: .7
+  }
 }
 
 @keyframes fixedMenu {
   0% {
-    opacity: 0;
+    opacity: 0
   }
-
-  /* 50% {
-    opacity: 0.4;
-  } */
 
   100% {
-    opacity: 0.7;
+    opacity: .7
   }
 }
-
-/*----------intro----------*/
-
 
 .intro {
   min-height: 920px;
@@ -159,7 +172,7 @@ a {
   background-size: cover;
   margin-top: -60px;
   padding-top: 130px;
-  margin-top: -72px;
+  margin-top: -72px
 }
 
 .online-course__course {
@@ -170,11 +183,11 @@ a {
   font-weight: 500;
   letter-spacing: 2.3px;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .intro-title {
-  margin-top: 20px;
+  margin-top: 20px
 }
 
 .intro-title__main {
@@ -184,8 +197,8 @@ a {
   font-size: 7rem;
   line-height: 80px;
   font-weight: 900;
-  letter-spacing: 0.5px;
-  color: #fff;
+  letter-spacing: .5px;
+  color: #fff
 }
 
 .intro-title__color {
@@ -195,8 +208,8 @@ a {
   line-height: 35px;
   font-weight: 900;
   color: #7EE8FF;
-  letter-spacing: 0.5px;
-  margin-bottom: 5px;
+  letter-spacing: .5px;
+  margin-bottom: 5px
 }
 
 .intro-title__size {
@@ -206,7 +219,7 @@ a {
   line-height: 51px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 28px;
+  margin-bottom: 28px
 }
 
 .online-course__subtitle {
@@ -215,7 +228,7 @@ a {
   line-height: 3rem;
   font-weight: 300;
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
 .author {
@@ -223,20 +236,20 @@ a {
   font-size: 2rem;
   line-height: 3rem;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
 .author__author {
   color: #fff;
-  margin-right: 9px;
+  margin-right: 9px
 }
 
 .author__name {
-  color: #7EE8FF;
+  color: #7EE8FF
 }
 
 .intro-reviews {
-  margin-bottom: 73px;
+  margin-bottom: 73px
 }
 
 .intro-reviews__link {
@@ -249,61 +262,66 @@ a {
   border: 2px solid #7EE8FF;
   border-radius: 5px;
   padding: 8px 19px;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .intro-reviews__link:hover {
-  box-shadow: 0 0 30px rgb(126 232 255 / 50%);
+  -webkit-box-shadow: 0 0 30px rgb(126 232 255 / 50%);
+  box-shadow: 0 0 30px rgb(126 232 255 / 50%)
 }
 
 .intro-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 -15px;
+  margin: 0 -15px
 }
 
 .intro-feature {
   margin: 0 15px;
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
 
 .intro-feature_1 {
-  width: 168px;
+  width: 168px
 }
 
 .intro-feature_2 {
-  width: 196px;
+  width: 196px
 }
 
 .intro-feature_3 {
-  width: 244px;
+  width: 244px
 }
 
 .intro-feature_4 {
-  width: 234px;
+  width: 234px
 }
 
 .intro-feature__icon {
   margin-left: 2px;
-  margin-bottom: 8px;
+  margin-bottom: 8px
 }
 
 .intro-feature__info {
   font-family: "Montserrat", sans-serif;
   font-size: 1.7rem;
   font-weight: 300;
-  color: #fff;
+  color: #fff
 }
-
-
-/*----------level----------*/
 
 .level {
   position: relative;
   background-color: #061D27;
   padding-top: 110px;
-  padding-bottom: 100px;
+  padding-bottom: 100px
 }
 
 .level-info__title {
@@ -313,7 +331,7 @@ a {
   line-height: 61px;
   font-weight: 700;
   color: #B1BDCA;
-  margin-bottom: 11px;
+  margin-bottom: 11px
 }
 
 .level-info__desc {
@@ -324,38 +342,32 @@ a {
   line-height: 39px;
   font-weight: 400;
   color: #B1BDCA;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
-/* Слайдер level-slider */
-
 .owl-carousel {
-  list-style: none;
+  list-style: none
 }
 
 .level-owl-carousel.owl-theme .owl-nav {
   min-width: 126px;
   position: absolute;
   top: -112px;
-  right: 360px;
+  right: 360px
 }
 
 .owl-carousel .owl-nav button.owl-prev:hover,
 .owl-carousel .owl-nav button.owl-next:hover {
-  background: transparent;
+  background: transparent
 }
 
 .owl-carousel .owl-nav button.owl-next {
-  margin-left: 55px;
+  margin-left: 55px
 }
-
-
-
-/*----------learn----------*/
 
 .learn {
   background-color: #052431;
-  padding: 100px 0 80px;
+  padding: 100px 0 80px
 }
 
 .learn__title {
@@ -365,25 +377,30 @@ a {
   line-height: 61px;
   font-weight: 700;
   color: #B1BDCA;
-  margin-bottom: 49px;
+  margin-bottom: 49px
 }
 
 .learn__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 -15px;
+  margin: 0 -15px
 }
 
 .learn-item {
   width: calc(25% - 30px);
-  margin: 0 15px 20px;
+  margin: 0 15px 20px
 }
 
 .learn-item__img {
   display: block;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
 
 .learn-item__title {
@@ -392,8 +409,8 @@ a {
   font-size: 2.4rem;
   line-height: 31px;
   font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 6px;
+  color: #fff;
+  margin-bottom: 6px
 }
 
 .learn-info {
@@ -402,20 +419,16 @@ a {
   font-size: 1.5rem;
   line-height: 23px;
   font-weight: 400;
-  color: #B1BDCA;
+  color: #B1BDCA
 }
-
-/*----------presentation----------*/
 
 .presentation {
   background-image: url(../img/presentation-bg.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   padding-top: 181px;
-  padding-bottom: 130px;
+  padding-bottom: 130px
 }
-
-
 
 .presentation-course {
   display: inline-block;
@@ -423,14 +436,14 @@ a {
   font-size: 3rem;
   line-height: 37px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   border: 2px solid #7EE8FF;
   padding: 8px 19px;
-  margin-bottom: 6px;
+  margin-bottom: 6px
 }
 
 .presentation-title {
-  margin-top: 25px;
+  margin-top: 25px
 }
 
 .presentation-title__main {
@@ -440,8 +453,8 @@ a {
   font-size: 7rem;
   line-height: 80px;
   font-weight: 900;
-  letter-spacing: 0.5px;
-  color: #fff;
+  letter-spacing: .5px;
+  color: #fff
 }
 
 .presentation-title__color {
@@ -451,8 +464,8 @@ a {
   line-height: 35px;
   font-weight: 900;
   color: #7EE8FF;
-  letter-spacing: 0.5px;
-  margin-bottom: 5px;
+  letter-spacing: .5px;
+  margin-bottom: 5px
 }
 
 .presentation-title__size {
@@ -462,7 +475,7 @@ a {
   line-height: 51px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 29px;
+  margin-bottom: 29px
 }
 
 .presentation__subtitle {
@@ -472,16 +485,13 @@ a {
   font-weight: 400;
   letter-spacing: 1.5px;
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
-
-
-/*----------trick----------*/
 
 .trick {
   background-color: #052431;
   padding-top: 100px;
-  padding-bottom: 37px;
+  padding-bottom: 37px
 }
 
 .trick__title {
@@ -491,24 +501,29 @@ a {
   line-height: 61px;
   font-weight: 700;
   color: #B1BDCA;
-  margin-bottom: 54px;
+  margin-bottom: 54px
 }
 
 .trick__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 -15px;
+  margin: 0 -15px
 }
 
 .trick-item {
   width: calc(33.33% - 30px);
-  margin: 0 15px 60px;
+  margin: 0 15px 60px
 }
 
 .trick-item__icon {
   margin-left: 2px;
-  margin-bottom: 8px;
+  margin-bottom: 8px
 }
 
 .trick-item__info {
@@ -516,7 +531,7 @@ a {
   font-size: 2rem;
   line-height: 25px;
   font-weight: 700;
-  color: #fff;
+  color: #fff
 }
 
 .trick-item__info_add {
@@ -525,16 +540,13 @@ a {
   line-height: 23px;
   font-weight: 400;
   color: #B1BDCA;
-  margin-top: 7px;
+  margin-top: 7px
 }
-
-
-/*----------for----------*/
 
 .for {
   background-color: #061D27;
   padding-top: 100px;
-  padding-bottom: 80px;
+  padding-bottom: 80px
 }
 
 .for__title {
@@ -544,14 +556,19 @@ a {
   line-height: 61px;
   font-weight: 700;
   color: #B1BDCA;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
 .for__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 -15px;
+  margin: 0 -15px
 }
 
 .for-item {
@@ -559,11 +576,11 @@ a {
   width: calc(33.33% - 30px);
   background-color: #052431;
   padding: 23px 20px 10px 55px;
-  border-radius: 10px;
+  border-radius: 10px
 }
 
 .for-item__icon {
-  margin-bottom: 8px;
+  margin-bottom: 8px
 }
 
 .for-item__title {
@@ -572,12 +589,11 @@ a {
   line-height: 30px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .for-item__list {
-
-  list-style: none;
+  list-style: none
 }
 
 .for-item__info {
@@ -588,7 +604,7 @@ a {
   line-height: 23px;
   font-weight: 400;
   color: #B1BDCA;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .for-item__info::before {
@@ -596,11 +612,8 @@ a {
   content: url(../img/point.svg);
   position: absolute;
   top: 1px;
-  left: -31px;
+  left: -31px
 }
-
-
-/*----------rabana----------*/
 
 .rabana {
   background-image: url(../img/author-bg.jpg);
@@ -608,29 +621,36 @@ a {
   background-position: top center;
   background-size: cover;
   padding-top: 116px;
-  padding-bottom: 101px;
+  padding-bottom: 101px
 }
 
 .rabana__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  margin: 0 -15px;
+  margin: 0 -15px
 }
 
 .rabana-item {
   width: calc(50% - 30px);
-  margin: 0 15px 20px;
+  margin: 0 15px 20px
 }
 
 .rabana-item-2 {
   width: calc(42% - 30px);
-  text-align: center;
+  text-align: center
 }
 
 .rabana-item-2 img {
-  margin-bottom: 33px;
+  margin-bottom: 33px
 }
 
 .rabana-item__title {
@@ -640,7 +660,7 @@ a {
   line-height: 61px;
   font-weight: 700;
   color: #B1BDCA;
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
 
 .rabana-item__subtitle {
@@ -649,14 +669,14 @@ a {
   font-size: 6rem;
   line-height: 73px;
   color: #7EE8FF;
-  margin-bottom: 15px;
+  margin-bottom: 15px
 }
 
 .rabana-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
 
 .rabana-list__item {
@@ -666,7 +686,7 @@ a {
   line-height: 150%;
   color: #B1BDCA;
   padding-left: 26px;
-  margin-bottom: 15px;
+  margin-bottom: 15px
 }
 
 .rabana-list__item::before {
@@ -678,10 +698,12 @@ a {
   width: 10px;
   height: 10px;
   background-color: #7EE8FF;
-  border-radius: 50%;
+  border-radius: 50%
 }
 
 .rabana-voice {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 274px;
   font-family: "Montserrat", sans-serif;
@@ -693,34 +715,33 @@ a {
   border-radius: 5px;
   padding: 10px 19px;
   text-decoration: none;
-  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s
 }
 
 .rabana-voice:hover {
-  box-shadow: 0 0 30px rgb(126 232 255 / 50%);
+  -webkit-box-shadow: 0 0 30px rgb(126 232 255 / 50%);
+  box-shadow: 0 0 30px rgb(126 232 255 / 50%)
 }
 
 .rabana-voice img {
-  margin-right: 10px;
+  margin-right: 10px
 }
 
 .rabana-item__desc {
   width: 270px;
   margin: 0 auto;
-
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   line-height: 22px;
-  color: #B1BDCA;
+  color: #B1BDCA
 }
-
-
-/*----------reviews----------*/
 
 .reviews {
   background-color: #061D27;
   padding-top: 103px;
-  padding-bottom: 89px;
+  padding-bottom: 89px
 }
 
 .reviews__title {
@@ -729,7 +750,7 @@ a {
   font-size: 5rem;
   line-height: 61px;
   font-weight: 700;
-  color: #B1BDCA;
+  color: #B1BDCA
 }
 
 .reviews-desc {
@@ -739,34 +760,45 @@ a {
   font-size: 3.4rem;
   line-height: 150%;
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
 .reviews-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #052431;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .reviews-slide-box_img {
-  min-width: 470px;
+  min-width: 470px
 }
 
 .reviews-slide-box_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: 5rem 5rem 5rem 3rem;
+  padding: 5rem 5rem 5rem 3rem
 }
 
 .reviews-slide-title {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 120%;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 15px
 }
 
 .reviews-slide-reviews {
@@ -776,7 +808,7 @@ a {
   line-height: 23px;
   font-weight: 400;
   color: #B1BDCA;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .reviews-slide-link {
@@ -785,18 +817,18 @@ a {
   font-size: 1.8rem;
   line-height: 120%;
   color: #7EE8FF;
-  margin-top: auto;
+  margin-top: auto
 }
 
 .reviews-owl-carousel.owl-theme .owl-nav {
   min-width: 126px;
   position: absolute;
   top: -112px;
-  right: 195px;
+  right: 195px
 }
 
 .reviews-owl-carousel.owl-theme .owl-dots {
-  margin-top: 25px;
+  margin-top: 25px
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -805,22 +837,23 @@ a {
   margin: 5px 7px;
   background: transparent;
   border: 1px solid #ff2e60;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 50%;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #ff2e60;
+  background: #ff2e60
 }
-
-/*----------need----------*/
 
 .need {
   background-color: #052431;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 50px
 }
 
 .need__title {
@@ -830,45 +863,54 @@ a {
   line-height: 61px;
   font-weight: 700;
   color: #B1BDCA;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
 .need__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: 0 -15px
 }
 
 .need__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: calc(50% - 30px);
   border: 1px dashed #274350;
   padding: 35px 10px 20px;
-  margin: 0 15px 20px;
+  margin: 0 15px 20px
 }
 
 .need-item {
-
   color: #fff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  text-align: center;
+  text-align: center
 }
 
 .need-item__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 30px
 }
 
 .need-item__title_mod1 {
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
 .need-item__title_mod2 {
-  margin-bottom: 70px;
+  margin-bottom: 70px
 }
 
 .need-item__or {
+  -ms-flex-item-align: end;
   align-self: flex-end;
   min-width: 50px;
   min-height: 50px;
@@ -881,15 +923,13 @@ a {
   border-radius: 50%;
   margin: 0 5px;
   margin-top: 50px;
-  margin-bottom: 66px;
+  margin-bottom: 66px
 }
-
-/*----------how----------*/
 
 .how {
   background-color: #052431;
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 100px
 }
 
 .how__title {
@@ -899,27 +939,32 @@ a {
   line-height: 61px;
   font-weight: 700;
   color: #B1BDCA;
-  margin-bottom: 42px;
+  margin-bottom: 42px
 }
 
 .how__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
 }
 
 .how-item__title {
   font-family: Montserrat;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .how-item__video {
   display: block;
-  position: relative;
+  position: relative
 }
 
 .how-item__video::after {
@@ -931,20 +976,20 @@ a {
   top: 50%;
   left: 50%;
   background: url(../img/play.svg) no-repeat 0 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .how-item__video:hover.how-item__video::after {
-  top: 48%;
+  top: 48%
 }
 
-/*----------about ----------*/
-
-/* about-top */
-
 .about {
-  background-color: #061D27;
+  background-color: #061D27
 }
 
 .about-top {
@@ -953,7 +998,7 @@ a {
   background-position: center top;
   background-size: cover;
   padding-top: 180px;
-  padding-bottom: 157px;
+  padding-bottom: 157px
 }
 
 .about-top-list {
@@ -961,18 +1006,18 @@ a {
   margin-left: 50%;
   margin-right: 100px;
   padding-left: 33px;
-  list-style: none;
+  list-style: none
 }
 
 .about-top-list__title {
   margin: 0;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 5rem;
   line-height: 6.1rem;
-  color: #ffffff;
+  color: #fff;
   margin-left: 50%;
   margin-right: 100px;
-  margin-bottom: 22px;
+  margin-bottom: 22px
 }
 
 .about-top-list__item {
@@ -982,22 +1027,20 @@ a {
   font-size: 1.6rem;
   line-height: 24px;
   font-weight: 400;
-  color: #ffffff;
-  margin-bottom: 20px;
+  color: #fff;
+  margin-bottom: 20px
 }
 
 .about-top-list__item::before {
   position: absolute;
   content: url(../img/point.svg);
   top: 1px;
-  left: -30px;
+  left: -30px
 }
-
-/* about-test */
 
 .about-test {
   text-align: center;
-  padding: 100px 0 50px;
+  padding: 100px 0 50px
 }
 
 .about-test__info {
@@ -1005,35 +1048,74 @@ a {
   font-size: 2.4rem;
   line-height: 48px;
   font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 29px;
+  color: #fff;
+  margin-bottom: 29px
 }
 
 .form-test {
   border: 1px dashed #274350;
   background: #052431;
   border-radius: 1rem;
-  padding: 30px 60px 36px;
+  padding: 30px 60px 36px
 }
 
 .form-test__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  margin: 0 -15px;
+  margin: 0 -15px
 }
 
 .form-test__item {
   width: calc(33.33% - 30px);
-  margin: 0 15px 20px;
+  margin: 0 15px 20px
 }
 
 .form-test__field {
   position: relative;
   border: 1px solid #7ee8ff;
   border-radius: 6px;
-  padding: 15px 12px 15px 40px;
+  padding: 15px 12px 15px 40px
+}
+
+.form-test__field::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, .7)
+}
+
+.form-test__field::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, .7)
+}
+
+.form-test__field:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, .7)
+}
+
+.form-test__field::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, .7)
 }
 
 .form-test__field::placeholder {
@@ -1041,15 +1123,15 @@ a {
   font-size: 1.4rem;
   line-height: 20px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, .7)
 }
 
 .form-test__field_email {
-  background: url(../img/envelope.svg) left 1.2rem center no-repeat;
+  background: url(../img/envelope.svg) left 1.2rem center no-repeat
 }
 
 .form-test__field_phone {
-  background: url(../img/icon-phone.svg) left 1.2rem center no-repeat;
+  background: url(../img/icon-phone.svg) left 1.2rem center no-repeat
 }
 
 .form-test__btn {
@@ -1062,17 +1144,18 @@ a {
   border-radius: 5px;
   padding: 6px 20px;
   cursor: pointer;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .form-test__btn:hover {
-  box-shadow: 0 0 30px rgb(255 46 96 / 50%);
+  -webkit-box-shadow: 0 0 30px rgb(255 46 96 / 50%);
+  box-shadow: 0 0 30px rgb(255 46 96 / 50%)
 }
 
-/* Стилизация чекбокса */
-
 .form-personal__check {
-  display: none;
+  display: none
 }
 
 .form-personal__label {
@@ -1083,8 +1166,11 @@ a {
   color: #fff;
   line-height: 11px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
-  padding-left: 30px;
+  padding-left: 30px
 }
 
 .form-personal__check+label::before {
@@ -1096,7 +1182,7 @@ a {
   height: 20px;
   background-color: #fff;
   border: 1px solid #fff;
-  border-radius: 5px;
+  border-radius: 5px
 }
 
 .form-personal__check:checked+label::after {
@@ -1106,36 +1192,31 @@ a {
   left: 0;
   width: 20px;
   height: 20px;
-  background: url(../img/check-1\ .svg) 5px 6px no-repeat transparent;
+  background: url(../img/check-1\ .svg) 5px 6px no-repeat transparent
 }
 
 .form-personal__link {
   color: #7ee8ff;
   text-decoration: none;
   border-bottom: 1px dashed #7ee8ff;
-  cursor: pointer;
+  cursor: pointer
 }
-
-/* about-content */
-
-/* accordion */
 
 .tab {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-bottom: 1px solid #314255;
+  border-bottom: 1px solid #314255
 }
 
 .tab input {
   position: absolute;
   opacity: 0;
-  z-index: -1;
+  z-index: -1
 }
 
-
 .tab:last-child {
-  border: none;
+  border: none
 }
 
 .tab-label {
@@ -1143,7 +1224,9 @@ a {
   width: 100%;
   cursor: pointer;
   padding: 5rem 0;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s
 }
 
 .tab-label::after {
@@ -1155,7 +1238,9 @@ a {
   width: 5rem;
   height: 5rem;
   text-align: center;
-  transition: all .2s;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s
 }
 
 .tab-label__title {
@@ -1164,7 +1249,7 @@ a {
   font-size: 1.8rem;
   line-height: 27px;
   font-weight: 500;
-  color: #7EE8FF;
+  color: #7EE8FF
 }
 
 .tab-label__subtitle {
@@ -1173,7 +1258,7 @@ a {
   font-size: 2.4rem;
   line-height: 36px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff
 }
 
 .tab-label__time {
@@ -1182,52 +1267,55 @@ a {
   font-size: 1.5rem;
   line-height: 22px;
   font-weight: 500;
-  color: #7EE8FF;
+  color: #7EE8FF
 }
 
 .tab-content {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  opacity: 0;
+  opacity: 0
 }
 
 .tab-content_4 {
-  padding-bottom: 100px;
+  padding-bottom: 100px
 }
 
-
-/* checked */
-
-/* input:checked+.tab-label {
-  padding-bottom: 20px;
-  transition: all .3s;
-} */
-
 input:checked+.tab-label::after {
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
   transform: rotate(135deg);
-  transition: all .2s;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s
 }
 
 input:checked~.tab-content {
   height: auto;
   overflow: visible;
   z-index: 10;
-  opacity: 1;
+  opacity: 1
 }
 
 .tab-content__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
 }
 
 .tab-content__item {
-  flex-basis: 500px;
+  -ms-flex-preferred-size: 500px;
+  flex-basis: 500px
 }
 
 .tab-content__item:last-child {
-  flex-basis: 570px;
+  -ms-flex-preferred-size: 570px;
+  flex-basis: 570px
 }
 
 .tab-content__item-info {
@@ -1236,17 +1324,17 @@ input:checked~.tab-content {
   line-height: 22.5px;
   font-weight: 500;
   color: #b1bdca;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .tab-content__item-info:last-child {
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
 .tab-content-list {
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style: none
 }
 
 .tab-content-list__item {
@@ -1254,22 +1342,21 @@ input:checked~.tab-content {
   font-size: 1.8rem;
   line-height: 22.5px;
   font-weight: 500;
-  color: #ffffff;
-  margin-bottom: 10px;
+  color: #fff;
+  margin-bottom: 10px
 }
 
 .tab-content-list__number {
   color: #7ee8ff;
-  margin-right: 30px;
+  margin-right: 30px
 }
 
 .homework {
-  margin-top: 40px;
-
+  margin-top: 40px
 }
 
 .homework-task {
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
 
 .homework-task__title {
@@ -1278,7 +1365,7 @@ input:checked~.tab-content {
   line-height: 22.5px;
   font-weight: 700;
   color: #7ee8ff;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .homework-task__info {
@@ -1287,7 +1374,7 @@ input:checked~.tab-content {
   line-height: 22.5px;
   font-weight: 500;
   color: #b1bdca;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .homework-result__title {
@@ -1295,12 +1382,12 @@ input:checked~.tab-content {
   font-size: 2.4rem;
   line-height: 22.5px;
   font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 40px;
+  color: #fff;
+  margin-bottom: 40px
 }
 
 .homework-result__title_2 {
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .homework-result__info {
@@ -1309,20 +1396,18 @@ input:checked~.tab-content {
   line-height: 22.5px;
   font-weight: 500;
   color: #b1bdca;
-  margin-bottom: 30px;
+  margin-bottom: 30px
 }
-
-/*homework-slider*/
 
 .homework1-owl-carousel.owl-theme .owl-nav {
   min-width: 126px;
   position: absolute;
   top: -112px;
-  right: 0;
+  right: 0
 }
 
 .homework1-owl-carousel .owl-nav.disabled {
-  display: block;
+  display: block
 }
 
 .task-1 {
@@ -1331,7 +1416,7 @@ input:checked~.tab-content {
   background: #052431;
   padding: 3rem;
   margin-top: 3rem;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
 .task-1__info {
@@ -1340,7 +1425,7 @@ input:checked~.tab-content {
   margin: 0 auto;
   text-align: left;
   padding-left: 85px;
-  margin-bottom: 30px;
+  margin-bottom: 30px
 }
 
 .task-1__info::before {
@@ -1350,7 +1435,7 @@ input:checked~.tab-content {
   content: "";
   background: url(../img/star.svg) no-repeat;
   width: 40px;
-  height: 48px;
+  height: 48px
 }
 
 .task-1__text {
@@ -1358,7 +1443,7 @@ input:checked~.tab-content {
   font-size: 2rem;
   line-height: 30px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff
 }
 
 .task-1__title {
@@ -1366,28 +1451,33 @@ input:checked~.tab-content {
   font-size: 2.4rem;
   line-height: 36px;
   font-weight: 700;
-  color: #7ee8ff;
+  color: #7ee8ff
 }
 
 .second-chapter__row,
 .third-chapter__row,
 .fourth-chapter__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
 }
 
 .second-chapter__item,
 .third-chapter__item,
 .fourth-chapter__item {
   position: relative;
-  width: 48.9%;
+  width: 48.9%
 }
 
 .second-chapter__item img,
 .third-chapter__item img,
 .fourth-chapter__item img {
-  display: block;
+  display: block
 }
 
 .second-chapter__item_1::before {
@@ -1401,7 +1491,9 @@ input:checked~.tab-content {
   background: url(../img/bonus-22a.jpg);
   background-size: cover;
   opacity: 0;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .second-chapter__item_2::before {
@@ -1415,7 +1507,9 @@ input:checked~.tab-content {
   background: url(../img/bonus-22b.jpg);
   background-size: cover;
   opacity: 0;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .third-chapter__item_1::before {
@@ -1429,7 +1523,9 @@ input:checked~.tab-content {
   background: url(../img/bonus-3aa.jpg);
   background-size: cover;
   opacity: 0;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .third-chapter__item_2::before {
@@ -1443,7 +1539,9 @@ input:checked~.tab-content {
   background: url(../img/bonus-3bb.jpg);
   background-size: cover;
   opacity: 0;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .fourth-chapter__item_1::before {
@@ -1457,7 +1555,9 @@ input:checked~.tab-content {
   background: url(../img/bonus-4aa.jpg);
   background-size: cover;
   opacity: 0;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .fourth-chapter__item_2::before {
@@ -1471,7 +1571,9 @@ input:checked~.tab-content {
   background: url(../img/bonus-4bb.jpg);
   background-size: cover;
   opacity: 0;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .second-chapter__item_1:hover.second-chapter__item_1::before,
@@ -1480,26 +1582,29 @@ input:checked~.tab-content {
 .third-chapter__item_2:hover.third-chapter__item_2::before,
 .fourth-chapter__item_1:hover.fourth-chapter__item_1::before,
 .fourth-chapter__item_2:hover.fourth-chapter__item_2::before {
-  opacity: 1;
+  opacity: 1
 }
 
-
-/*----------certificate ----------*/
-
 .certificate {
-  padding: 100px 0 80px;
+  padding: 100px 0 80px
 }
 
 .certificate__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 -15px;
+  margin: 0 -15px
 }
 
 .certificate-info {
   max-width: 470px;
-  margin: 0 15px 20px;
+  margin: 0 15px 20px
 }
 
 .certificate-info__title {
@@ -1509,7 +1614,7 @@ input:checked~.tab-content {
   line-height: 61px;
   font-weight: 700;
   color: #B1BDCA;
-  margin-bottom: 33px;
+  margin-bottom: 33px
 }
 
 .certificate-info__desc {
@@ -1518,21 +1623,19 @@ input:checked~.tab-content {
   font-weight: 500;
   font-size: 2rem;
   line-height: 150%;
-  color: #fff;
+  color: #fff
 }
 
 .certificate__img {
   margin: 0 15px 20px;
-  box-shadow: 0px 4px 80px #263341;
-  border-radius: 2rem;
+  -webkit-box-shadow: 0 4px 80px #263341;
+  box-shadow: 0 4px 80px #263341;
+  border-radius: 2rem
 }
-
-
-/*----------rate ----------*/
 
 .rate {
   background-color: #061D27;
-  padding: 86px 0 80px;
+  padding: 86px 0 80px
 }
 
 .rate__title {
@@ -1543,61 +1646,68 @@ input:checked~.tab-content {
   line-height: 61px;
   font-weight: 700;
   color: #B1BDCA;
-  margin-bottom: 33px;
+  margin-bottom: 33px
 }
 
 .rate__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: -60px -15px 0;
+  margin: -60px -15px 0
 }
 
 .rate-item {
   width: calc(33.33% - 30px);
   background: #052431;
   margin: 0 15px 20px;
-  padding: 40px 30px;
+  padding: 40px 30px
 }
 
 .rate-name__set {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 20px;
   text-align: center;
-  letter-spacing: 0.2em;
+  letter-spacing: .2em;
   text-transform: uppercase;
-  margin-bottom: 2px;
+  margin-bottom: 2px
 }
 
 .rate-name__title {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 3rem;
   line-height: 37px;
   text-align: center;
   color: #7EE8FF;
-  margin-bottom: 30px;
+  margin-bottom: 30px
 }
 
 .rate-list {
   list-style: none;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
 .rate-list__item,
 .rate-list__item_plus {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 1.5rem;
   line-height: 18px;
   color: #B1BDCA;
   padding-left: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
 
 .rate-list__item::before {
@@ -1608,7 +1718,7 @@ input:checked~.tab-content {
   display: block;
   width: 12px;
   height: 12px;
-  background: url(../img/star-small.svg)no-repeat;
+  background: url(../img/star-small.svg)no-repeat
 }
 
 .rate-list__item_plus::before {
@@ -1619,46 +1729,46 @@ input:checked~.tab-content {
   display: block;
   width: 10px;
   height: 10px;
-  background: url(../img/plus.svg) no-repeat;
+  background: url(../img/plus.svg) no-repeat
 }
 
 .rate-list__item_divider {
   max-width: 269px;
   margin: 0 auto;
   margin-bottom: 20px;
-  border-bottom: 1px solid #4B5A68;
+  border-bottom: 1px solid #4B5A68
 }
 
 .rate-price {
-  text-align: center;
+  text-align: center
 }
 
 .rate-price__text {
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 2.6rem;
   line-height: 32px;
-  margin-right: 10px;
+  margin-right: 10px
 }
 
 .rate-price__real {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2.6rem;
   line-height: 32px;
   color: #fff;
   text-decoration: line-through;
-  margin-right: 10px;
+  margin-right: 10px
 }
 
 .rate-price__sale {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2.6rem;
   line-height: 32px;
-  color: #7EE8FF;
+  color: #7EE8FF
 }
 
 .rate-btn {
@@ -1673,41 +1783,40 @@ input:checked~.tab-content {
   padding: 5px 20px;
   cursor: pointer;
   margin: 30px 0 20px;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .rate-btn:hover {
-  box-shadow: 0 0 30px rgb(255 46 96 / 50%);
+  -webkit-box-shadow: 0 0 30px rgb(255 46 96 / 50%);
+  box-shadow: 0 0 30px rgb(255 46 96 / 50%)
 }
 
-
-
-
-
 .price-info {
-  text-align: center;
+  text-align: center
 }
 
 .price-info__show {
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 1.3rem;
   line-height: 16px;
   color: #B1BDCA;
-  margin-right: 10px;
+  margin-right: 10px
 }
 
 .price-info__currency {
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 1.3rem;
   line-height: 16px;
   color: #7EE8FF;
-  margin-right: 6px;
+  margin-right: 6px
 }
 
 .price-info__currency:last-child {
-  margin-right: 0;
+  margin-right: 0
 }
 
 .price-info__credit {
@@ -1722,28 +1831,28 @@ input:checked~.tab-content {
   padding: 13px 19px;
   margin-top: 17px;
   margin-bottom: 20px;
-  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s
 }
 
 .price-info__credit:hover {
-  box-shadow: 0 0 30px rgb(126 232 255 / 50%);
+  -webkit-box-shadow: 0 0 30px rgb(126 232 255 / 50%);
+  box-shadow: 0 0 30px rgb(126 232 255 / 50%)
 }
 
 .price-info__debit {
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 1.3rem;
   line-height: 16px;
   color: #B1BDCA;
-  margin-right: 10px;
+  margin-right: 10px
 }
-
-
-/*----------platform----------*/
 
 .platform {
   background-color: #061D27;
-  padding: 80px 0;
+  padding: 80px 0
 }
 
 .platform__title {
@@ -1752,9 +1861,9 @@ input:checked~.tab-content {
   font-size: 5rem;
   line-height: 61px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 33px;
-  text-align: center;
+  text-align: center
 }
 
 .platform__subtitle {
@@ -1766,82 +1875,92 @@ input:checked~.tab-content {
   font-size: 3rem;
   line-height: 150%;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem
 }
 
 .platform-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: #052431;
-  margin-bottom: 30px;
+  margin-bottom: 30px
 }
 
 .platform-item1 {
-  background: #052431 url(../img/1.png) no-repeat right 30px bottom;
+  background: #052431 url(../img/1.png) no-repeat right 30px bottom
 }
 
 .platform-item__img {
   width: 42%;
-  text-align: center;
+  text-align: center
 }
 
 .platform-item__img img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .platform-item__info {
   width: 58%;
-  padding: 0 80px 0 10px;
+  padding: 0 80px 0 10px
 }
 
 .platform-item__info-img {
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
 
 .platform-item__info-title {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 32px;
-  color: #FFFFFF;
-  margin-bottom: 20px;
+  color: #FFF;
+  margin-bottom: 20px
 }
 
 .platform-item__info-desc {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #B1BDCA;
+  color: #B1BDCA
 }
 
 .platform-item2 {
-  background: #052431 url(../img/2.png) no-repeat right 30px bottom;
+  background: #052431 url(../img/2.png) no-repeat right 30px bottom
 }
 
 .platform-item3 {
-  background: #052431 url(../img/3.png) no-repeat right 30px bottom;
+  background: #052431 url(../img/3.png) no-repeat right 30px bottom
 }
 
-/*----------guarantee----------*/
-
 .guarantee {
-  padding: 100px 0;
+  padding: 100px 0
 }
 
 .guarantee__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
 }
 
 .guarantee-info {
-  width: 55%;
+  width: 55%
 }
 
 .guarantee-info__title {
@@ -1851,7 +1970,7 @@ input:checked~.tab-content {
   line-height: 61px;
   font-weight: 700;
   color: #B1BDCA;
-  margin-bottom: 33px;
+  margin-bottom: 33px
 }
 
 .guarantee-info__desc {
@@ -1860,30 +1979,33 @@ input:checked~.tab-content {
   font-weight: 500;
   font-size: 2rem;
   line-height: 150%;
-  color: #fff;
+  color: #fff
 }
 
 .guarantee-img {
-  width: 35%;
+  width: 35%
 }
-
-/*----------questions----------*/
 
 .questions {
   background: #061d27;
-  padding: 80px 0;
+  padding: 80px 0
 }
 
 .questions__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 -15px;
+  margin: 0 -15px
 }
 
 .questions-items {
   width: calc(44% - 30px);
-  margin: 0 15px 20px;
+  margin: 0 15px 20px
 }
 
 .questions__title {
@@ -1893,135 +2015,132 @@ input:checked~.tab-content {
   line-height: 61px;
   font-weight: 700;
   color: #B1BDCA;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
 .questions-item {
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
 
 .questions-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 .questions-item__title {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 27px;
   color: #B1BDCA;
-  margin-bottom: 12px;
+  margin-bottom: 12px
 }
 
 .questions-item__info {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #B1BDCA;
+  color: #B1BDCA
 }
 
 .questions-item__link {
   color: #7ee8ff;
-  text-decoration: none;
+  text-decoration: none
 }
-
-
-/*----------footer----------*/
 
 .footer {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #B1BDCA;
-
-  padding: 70px 15px;
+  padding: 70px 15px
 }
 
 .footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 -15px;
+  margin: 0 -15px
 }
 
 .footer-item {
   width: calc(33.33% - 30px);
-  margin: 0 15px 20px;
+  margin: 0 15px 20px
 }
 
 .footer-logo__img {
   display: inline-block;
   margin-bottom: 22px;
-  opacity: 0.6;
+  opacity: .6
 }
 
 .footer-social {
-  margin-bottom: 15px;
+  margin-bottom: 15px
 }
 
 .footer-social__network {
   display: inline-block;
   width: 24px;
   height: 24px;
-  margin-right: 20px;
+  margin-right: 20px
 }
 
 .footer-services {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 15px
 }
 
 .footer-service__link,
 .footer-service__support {
-
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #B1BDCA;
   margin-bottom: 1px;
-  text-decoration: underline;
+  text-decoration: underline
 }
 
 .footer-service__support {
-  text-decoration: none;
+  text-decoration: none
 }
 
 .footer-service__link_email {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 5px
 }
 
 .footer-phones__call {
-  margin-bottom: 4px;
+  margin-bottom: 4px
 }
 
 .footer-phones__number {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 26px;
   line-height: 32px;
   color: #B1BDCA;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .footer-phones__time {
-  margin-bottom: 15px;
+  margin-bottom: 15px
 }
-
-
-/*----------Кнопка Наверх----------*/
 
 #toTop {
   width: 50px;
@@ -2036,116 +2155,112 @@ input:checked~.tab-content {
   line-height: 50px;
   text-align: center;
   color: #7ee8ff;
-  /* border: 1px solid #7ee8ff; */
   border-radius: 50%;
-  z-index: 10;
+  z-index: 10
 }
 
 #toTop:hover {
   background: #7ee8ff;
-  color: #052431;
+  color: #052431
 }
 
-/*Убирает подсветку-обводку с элемента на мобильных*/
 #toTop:focus,
 #toTop:active {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
-/*----------Адаптив----------*/
-
-@media only screen and (max-width: 1700px) {
-
+@media only screen and (max-width:1700px) {
   .level-info__desc {
-    margin-bottom: 80px;
+    margin-bottom: 80px
   }
 
   .level-owl-carousel.owl-theme .owl-nav {
     position: absolute;
     top: -83px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
   }
 }
 
-@media only screen and (max-width: 1400px) {}
-
-@media only screen and (max-width: 1200px) {
-
+@media only screen and (max-width:1200px) {
   .reviews {
-    text-align: center;
+    text-align: center
   }
 
   .reviews-slide {
     display: block;
-    text-align: center;
+    text-align: center
   }
 
   .reviews-desc {
     max-width: 915px;
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 80px
   }
 
   .reviews-slide-img {
     padding-top: 3rem;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
   .reviews-owl-carousel.owl-theme .owl-nav {
     top: -83px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
   }
 
   .owl-carousel .owl-item img {
-    width: auto;
+    width: auto
   }
 
   .certificate__img {
-    width: 60%;
+    width: 60%
   }
-
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width:1024px) {
   .how {
-    text-align: center;
+    text-align: center
   }
 
   .how__row {
-    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 
   .how-item:first-child {
-    margin-bottom: 30px;
+    margin-bottom: 30px
   }
 
   .form-test__item {
-    width: calc(40% - 30px);
+    width: calc(40% - 30px)
   }
 
   .tab-content-list {
-    margin-bottom: 30px;
+    margin-bottom: 30px
   }
 }
 
-@media only screen and (max-width: 992px) {
-
+@media only screen and (max-width:992px) {
   body.lock {
-    overflow: hidden;
+    overflow: hidden
   }
 
   .header::before {
-    background: rgba(5, 36, 49, 0.9);
+    background: rgba(5, 36, 49, .9)
   }
 
   .header {
-    padding-top: 0;
+    padding-top: 0
   }
 
   .header__logo img {
-    max-width: 90%;
+    max-width: 90%
   }
 
   .header__burger {
@@ -2154,7 +2269,9 @@ input:checked~.tab-content {
     min-width: 30px;
     height: 20px;
     z-index: 5;
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2
   }
 
   .header__burger span {
@@ -2163,7 +2280,7 @@ input:checked~.tab-content {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background-color: #fff
   }
 
   .header__burger::before,
@@ -2174,31 +2291,40 @@ input:checked~.tab-content {
     height: 2px;
     background-color: #fff;
     left: 0;
-    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s
   }
 
   .header__burger::before {
-    top: 0;
-
+    top: 0
   }
 
   .header__burger::after {
-    bottom: 0;
+    bottom: 0
   }
 
   .header__burger.active::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    top: 9px;
+    top: 9px
   }
 
   .header__burger.active::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    bottom: 9px;
+    bottom: 9px
   }
 
   .header__burger.active span {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
     transform: scale(0);
-    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s
   }
 
   .header__menu {
@@ -2206,53 +2332,57 @@ input:checked~.tab-content {
     top: -100%;
     left: 0;
     width: 100%;
-    background: rgba(5, 36, 49, 0.7);
+    background: rgba(5, 36, 49, .7);
     padding-top: 70px;
     padding-bottom: 10px;
     overflow: auto;
-    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s
   }
 
   .header__menu.active {
-    top: 0;
+    top: 0
   }
 
   .header__list {
-    display: block;
+    display: block
   }
 
   .header__link {
     display: block;
     padding: 3px;
-    padding-left: 1.5rem;
+    padding-left: 1.5rem
   }
 
   .nav-order {
     margin-left: auto;
-    margin-right: 15px;
+    margin-right: 15px
   }
 
   .online-course__course {
-    font-size: 2rem;
+    font-size: 2rem
   }
 
   .intro-title__main,
   .intro-title__color {
     font-size: 5rem;
-    line-height: 40px;
+    line-height: 40px
   }
 
   .intro-title__size {
     font-size: 3.5rem;
-    line-height: 45px;
+    line-height: 45px
   }
 
   .intro-features {
-    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 
   .intro-feature {
-    width: calc(34% - 30px);
+    width: calc(34% - 30px)
   }
 
   .level,
@@ -2269,7 +2399,7 @@ input:checked~.tab-content {
   .platform,
   .guarantee,
   .questions {
-    padding: 70px 0;
+    padding: 70px 0
   }
 
   .level-info__title,
@@ -2288,216 +2418,230 @@ input:checked~.tab-content {
   .questions__title {
     font-size: 3.5rem;
     line-height: 4.5rem;
-    text-align: center;
+    text-align: center
   }
 
   .rabana-item__subtitle {
-    font-size: 5rem;
+    font-size: 5rem
   }
 
   .learn__row {
     max-width: 720px;
     margin: 0 auto;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 
   .learn-item {
-    width: calc(50% - 30px);
+    width: calc(50% - 30px)
   }
 
   .trick__row {
-    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 
   .trick-item {
     width: calc(40% - 30px);
-    text-align: center;
+    text-align: center
   }
 
   .for__row {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
   }
 
   .for-item {
-    width: calc(80% - 30px);
+    width: calc(80% - 30px)
   }
 
   .rabana {
-    padding: 70px 0;
+    padding: 70px 0
   }
 
   .rabana__row {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
   }
 
   .rabana-item,
   .rabana-item-2 {
     width: calc(80% - 30px);
-    text-align: center;
+    text-align: center
   }
 
   .rabana-item:first-child {
-    margin-bottom: 40px;
+    margin-bottom: 40px
   }
 
   .rabana-list {
-    text-align: left;
+    text-align: left
   }
 
   .rabana-voice {
-    margin: 0 auto;
+    margin: 0 auto
   }
 
   .reviews-desc {
     font-size: 2.5rem;
-    margin-bottom: 90px;
+    margin-bottom: 90px
   }
 
   .reviews-slide-box_text {
-    text-align: left;
+    text-align: left
   }
 
   .need__row {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
   }
 
   .need__wrap {
-    width: calc(51% - 30px);
+    width: calc(51% - 30px)
   }
 
   .form-test {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
   .form-test__item {
-    width: calc(100% - 30px);
+    width: calc(100% - 30px)
   }
 
   .tabs {
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
   .second-chapter__row,
   .third-chapter__row,
   .fourth-chapter__row {
-    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 
   .second-chapter__item,
   .third-chapter__item,
   .fourth-chapter__item {
     width: 51%;
-    margin-bottom: 20px;
+    margin-bottom: 20px
   }
 
   .homework-result {
-    text-align: center;
+    text-align: center
   }
 
   .certificate__row {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
   }
 
   .certificate-info,
   .certificate__img {
-    max-width: 600px;
+    max-width: 600px
   }
 
   .rate__title {
     max-width: 600px;
     margin: 0 auto;
     line-height: 45px;
-    margin-bottom: 80px;
+    margin-bottom: 80px
   }
 
   .rate__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center
   }
 
   .rate-item {
-    width: calc(50% - 30px);
+    width: calc(50% - 30px)
   }
 
   .platform__subtitle {
-    font-size: 2rem;
+    font-size: 2rem
   }
 
   .platform-item {
     max-width: 720px;
     margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px
   }
 
   .platform-item__info {
-    padding: 50px 10px;
+    padding: 50px 10px
   }
 
   .guarantee__row {
     display: block;
     max-width: 720px;
     margin: 0 auto;
-    text-align: center;
+    text-align: center
   }
 
   .guarantee-info,
   .guarantee-img {
-    width: 100%;
+    width: 100%
   }
 
   .guarantee-info {
-    margin-bottom: 30px;
+    margin-bottom: 30px
   }
 
   .questions__row {
     display: block;
     max-width: 720px;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
   .questions-items {
     width: 100%;
-    margin: 0;
+    margin: 0
   }
 
   .footer-items {
-    display: block;
+    display: block
   }
 
   .footer-item {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 30px
   }
 
   #toTop {
-    right: 20px;
-  }
-
-}
-
-
-
-@media only screen and (max-width: 880px) {
-  .intro {
-    background: url(../img/top-bg-mobile.jpg) center top no-repeat;
+    right: 20px
   }
 }
 
-@media only screen and (max-width: 767px) {
-
+@media only screen and (max-width:880px) {
   .intro {
-    min-height: auto;
+    background: url(../img/top-bg-mobile.jpg) center top no-repeat
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .intro {
+    min-height: auto
   }
 
   .intro .container {
-    text-align: center;
+    text-align: center
   }
 
   .level-info__desc {
@@ -2506,22 +2650,21 @@ input:checked~.tab-content {
     font-size: 1.6rem;
     line-height: 150%;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 80px
   }
 
   .online-course__course {
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 2.5rem
   }
 
   .learn-item {
-    text-align: center;
+    text-align: center
   }
 
   .learn-item__img {
-    margin: 0 auto 10px;
+    margin: 0 auto 10px
   }
-
 
   .level,
   .learn,
@@ -2537,7 +2680,7 @@ input:checked~.tab-content {
   .platform,
   .guarantee,
   .questions {
-    padding: 40px 0;
+    padding: 40px 0
   }
 
   .level-info__title,
@@ -2555,51 +2698,51 @@ input:checked~.tab-content {
   .guarantee-info__title,
   .questions__title {
     font-size: 2rem;
-    line-height: 150%;
+    line-height: 150%
   }
 
   .learn__row {
-    display: block;
+    display: block
   }
 
   .learn-item {
     max-width: 540px;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
   .learn-item__title {
-    font-size: 2rem;
+    font-size: 2rem
   }
 
   .learn-info {
-    margin-bottom: 40px;
+    margin-bottom: 40px
   }
 
   .presentation {
     background-size: cover;
-    padding: 70px 0;
+    padding: 70px 0
   }
 
   .presentation .container {
-    max-width: 540px;
+    max-width: 540px
   }
 
   .presentation-course {
     font-size: 2rem;
     padding: 2px 16px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
   }
 
   .presentation-title__main,
   .presentation-title__color {
     font-size: 4rem;
-    line-height: 3rem;
+    line-height: 3rem
   }
 
   .presentation-title__size {
     font-size: 2.8rem;
     line-height: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 35px
   }
 
   .presentation__subtitle {
@@ -2607,357 +2750,350 @@ input:checked~.tab-content {
     line-height: 2.6rem;
     font-weight: 500;
     letter-spacing: 0;
-    margin-bottom: 0;
+    margin-bottom: 0
   }
 
   .trick-item {
     width: calc(100% - 30px);
-    max-width: 400px;
-
+    max-width: 400px
   }
 
   .trick-item__info {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 20px
   }
 
   .trick-item__info_add {
     font-size: 12px;
-    line-height: 16px;
+    line-height: 16px
   }
 
   .trick-item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0
   }
 
   .rabana-item__subtitle {
     font-size: 32px;
-    line-height: 30px;
+    line-height: 30px
   }
 
   .reviews-desc {
     font-size: 16px;
     max-width: 540px;
-    margin-top: 20px;
+    margin-top: 20px
   }
 
   .need__wrap {
-    width: 100%;
+    width: 100%
   }
 
   .about-top {
     background: none;
-    padding-bottom: 0;
+    padding-bottom: 0
   }
 
   .about-top-list {
     max-width: 540px;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
   .about-top-list__title {
     font-size: 20px;
-    margin-left: 0;
+    margin-left: 0
   }
 
   .tab-label__title {
     font-size: 16px;
-    line-height: 150%;
+    line-height: 150%
   }
 
   .tab-label__subtitle {
     font-size: 16px;
-    line-height: 150%;
+    line-height: 150%
   }
 
   .tab-label__time {
     font-size: 12px;
-    line-height: 150%;
+    line-height: 150%
   }
 
   .tab-content_4 {
-    padding-bottom: 0;
+    padding-bottom: 0
   }
 
   .tab-content__item-info {
     font-size: 14px;
-    line-height: 150%;
+    line-height: 150%
   }
 
   .tab-content-list__item {
     font-size: 16px;
     line-height: 150%;
-    margin-bottom: 5px;
+    margin-bottom: 5px
   }
 
   .tab-content__item-info:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 20px
   }
 
   .homework-result__title {
     font-size: 1.8rem;
     line-height: 22.5px;
-    margin-bottom: 20px;
+    margin-bottom: 20px
   }
 
   .homework-task {
-    margin-bottom: 20px;
+    margin-bottom: 20px
   }
 
   .homework1-owl-carousel.owl-theme .owl-nav {
     max-width: 80px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
   }
 
   .task-1__text {
     font-size: 16px;
-    font-weight: normal;
-    line-height: 150%;
+    font-weight: 400;
+    line-height: 150%
   }
 
   .task-1__title {
     font-size: 16px;
-    line-height: 150%;
+    line-height: 150%
   }
 
   .task-1__info {
     max-width: 539px;
     text-align: center;
     padding-left: 0;
-    padding-top: 60px;
+    padding-top: 60px
   }
 
   .task-1__info::before {
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
   }
 
   .certificate-info__desc {
-    font-size: 1.6rem;
+    font-size: 1.6rem
   }
 
   .platform__subtitle {
     max-width: 540px;
     font-size: 1.6rem;
-    line-height: 150%;
+    line-height: 150%
   }
 
   .platform-item__info-title {
     font-size: 1.6rem;
     line-height: 150%;
-    margin-bottom: 10px;
+    margin-bottom: 10px
   }
 
   .platform-item__info-desc {
     font-size: 1.2rem;
-    line-height: 150%;
+    line-height: 150%
   }
 
   .guarantee-info__desc {
     max-width: 540px;
     margin: 0 auto;
-    font-size: 1.6rem;
+    font-size: 1.6rem
   }
 
   .questions-item__title {
     font-size: 2rem;
     line-height: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 10px
   }
 
   .questions-item__info,
   .questions-item__link {
     font-size: 1.2rem;
-    line-height: 150%;
+    line-height: 150%
   }
-
-
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width:540px) {
   .intro {
-    background-size: cover;
+    background-size: cover
   }
 
   .intro-feature {
-    width: 100%;
+    width: 100%
   }
 
   .intro-reviews {
-    margin-bottom: 20px;
+    margin-bottom: 20px
   }
 
   .online-course__subtitle {
-    margin-bottom: 20px;
+    margin-bottom: 20px
   }
 
   .learn-item,
   .for-item {
-    width: 100%;
+    width: 100%
   }
 
   .need__wrap {
-    display: block;
+    display: block
   }
 
   .need-item__or {
     width: 50px;
     display: block;
-    margin: 10px auto 20px;
+    margin: 10px auto 20px
   }
 
   .need-item__title_mod2 {
-    margin-bottom: 40px;
+    margin-bottom: 40px
   }
 
   .author {
-    margin-bottom: 20px;
+    margin-bottom: 20px
   }
 
   .trick-item {
-    margin-bottom: 30px;
+    margin-bottom: 30px
   }
 
   .form-test__btn {
     padding: 12px 8px;
     font-size: 1.2rem;
-    line-height: 150%;
+    line-height: 150%
   }
 
   .tab-label {
-    padding-right: 20px;
+    padding-right: 20px
   }
 
   .tab-label__subtitle {
-    font-size: 1.4rem;
+    font-size: 1.4rem
   }
 
   .tab-label::after {
     width: 2rem;
-    height: 2rem;
+    height: 2rem
   }
 
   .tab-content-list__item {
-    font-size: 12px;
+    font-size: 12px
   }
 
   .task-1__text {
-    margin-bottom: 20px;
+    margin-bottom: 20px
   }
 
   .rate-price__text,
   .rate-price__real,
   .rate-price__sale {
-    font-size: 2rem;
+    font-size: 2rem
   }
 
   .rate-btn {
     display: block;
-    margin: 15px auto 15px;
+    margin: 15px auto 15px
   }
 
   .rate-item {
-    width: 100%;
+    width: 100%
   }
 
   .homework1-owl-carousel.owl-theme .owl-nav {
-    display: none;
+    display: none
   }
-
-
-
 }
 
-@media only screen and (max-width: 400px) {
-
+@media only screen and (max-width:400px) {
   .header__body {
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
   }
 
   .intro-title__main,
   .intro-title__color {
     font-size: 3rem;
-    line-height: 20px;
+    line-height: 20px
   }
 
   .intro-title__size {
     font-size: 2rem;
-    line-height: 10px;
+    line-height: 10px
   }
 
   .online-course__subtitle {
     font-size: 1.6rem;
     line-height: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 15px
   }
 
   .nav-order {
     font-size: 14px;
-    padding: 0px 12px;
+    padding: 0 12px
   }
 
   .level-slider {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
   .about-test__info {
-    line-height: 34px;
+    line-height: 34px
   }
-
-
 
   .platform {
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px
   }
 
   .rabana-item {
-    width: 100%;
+    width: 100%
   }
 
   .for-item__title {
-    font-size: 16px;
+    font-size: 16px
   }
 
   .for-item__info,
   .rabana-list__item {
-    font-size: 14px;
+    font-size: 14px
   }
 
   .reviews-slide-box_text {
-    padding: 15px;
+    padding: 15px
   }
 
-
-
   .form-test {
-    padding: 10px;
+    padding: 10px
   }
 
   .form-personal__label {
-    line-height: 20px;
+    line-height: 20px
   }
 
   .platform-item__img,
   .platform-item__info {
-    width: 100%;
+    width: 100%
   }
 
   .questions-item__title {
-    font-size: 1.8rem;
+    font-size: 1.8rem
   }
 
   .questions-item__info,
   .questions-item__link {
-    font-size: 1.1rem;
+    font-size: 1.1rem
   }
 
   footer {
     text-align: center;
-    padding: 40px 15px;
+    padding: 40px 15px
   }
-
 }
