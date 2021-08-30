@@ -2810,6 +2810,36 @@ input:checked~.tab-content {
     margin-bottom: 20px;
   }
 
+  .form-test__btn {
+    padding: 6px 8px;
+    font-size: 1.2rem;
+    line-height: 150%;
+  }
+
+  .tab-label {
+    padding-right: 20px;
+  }
+
+  .tab-label__subtitle {
+    font-size: 1.4rem;
+  }
+
+  .tab-label::after {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .rate-price__text,
+  .rate-price__real,
+  .rate-price__sale {
+    font-size: 2rem;
+  }
+
+  .rate-btn {
+    display: block;
+    margin: 15px auto 15px;
+  }
+
   .rate-item {
     width: 100%;
   }
@@ -2817,6 +2847,9 @@ input:checked~.tab-content {
   .homework1-owl-carousel.owl-theme .owl-nav {
     display: none;
   }
+
+
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -2856,9 +2889,7 @@ input:checked~.tab-content {
     line-height: 34px;
   }
 
-  .form-test__btn {
-    padding: 6px 15px;
-  }
+
 
   .platform {
     padding-left: 15px;
@@ -2882,10 +2913,7 @@ input:checked~.tab-content {
     padding: 15px;
   }
 
-  .tab-label::after {
-    width: 2rem;
-    height: 2rem;
-  }
+
 
   .form-test {
     padding: 10px;
