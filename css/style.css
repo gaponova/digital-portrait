@@ -1939,12 +1939,9 @@ input:checked~.tab-content {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-
-  /* Grey */
-
   color: #B1BDCA;
 
-  padding: 70px 0;
+  padding: 70px 15px;
 }
 
 .footer-items {
@@ -1964,6 +1961,7 @@ input:checked~.tab-content {
 .footer-logo__img {
   display: inline-block;
   margin-bottom: 22px;
+  opacity: 0.6;
 }
 
 .footer-logo__info {}
@@ -2140,7 +2138,7 @@ input:checked~.tab-content {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
 
   body.lock {
     overflow: hidden;
@@ -2152,6 +2150,10 @@ input:checked~.tab-content {
 
   .header {
     padding-top: 0;
+  }
+
+  .header__logo img {
+    max-width: 90%;
   }
 
   .header__burger {
@@ -2263,6 +2265,7 @@ input:checked~.tab-content {
 
   .level,
   .learn,
+  .trick,
   .for,
   .reviews,
   .need,
@@ -2467,6 +2470,7 @@ input:checked~.tab-content {
 
   .questions-items {
     width: 100%;
+    margin: 0;
   }
 
   .footer-items {
@@ -2480,6 +2484,10 @@ input:checked~.tab-content {
     margin-bottom: 30px;
   }
 
+  #toTop {
+    right: 20px;
+  }
+
 }
 
 
@@ -2490,7 +2498,326 @@ input:checked~.tab-content {
   }
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 767px) {
+
+  .intro {
+    min-height: auto;
+  }
+
+  .intro .container {
+    text-align: center;
+  }
+
+  .level-info__desc {
+    max-width: 540px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .online-course__course {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .learn-item {
+    text-align: center;
+  }
+
+  .learn-item__img {
+    margin: 0 auto 10px;
+  }
+
+
+  .level,
+  .learn,
+  .trick,
+  .for,
+  .reviews,
+  .need,
+  .how,
+  .about-top,
+  .about-test,
+  .certificate,
+  .rate,
+  .platform,
+  .guarantee,
+  .questions {
+    padding: 40px 0;
+  }
+
+  .level-info__title,
+  .learn__title,
+  .trick__title,
+  .for__title,
+  .rabana-item__title,
+  .reviews__title,
+  .need__title,
+  .how__title,
+  .about-top-list__title,
+  .certificate-info__title,
+  .rate__title,
+  .platform__title,
+  .guarantee-info__title,
+  .questions__title {
+    font-size: 2rem;
+    line-height: 150%;
+  }
+
+  .learn__row {
+    display: block;
+  }
+
+  .learn-item {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .learn-item__title {
+    font-size: 2rem;
+  }
+
+  .learn-info {
+    margin-bottom: 40px;
+  }
+
+  .presentation {
+    background-size: cover;
+    padding: 70px 0;
+  }
+
+  .presentation .container {
+    max-width: 540px;
+  }
+
+  .presentation-course {
+    font-size: 2rem;
+    padding: 2px 16px;
+    margin-bottom: 10px;
+  }
+
+  .presentation-title__main,
+  .presentation-title__color {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+
+  .presentation-title__size {
+    font-size: 2.8rem;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .presentation__subtitle {
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 0;
+  }
+
+  .trick-item {
+    width: calc(100% - 30px);
+    max-width: 400px;
+
+  }
+
+  .trick-item__info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .trick-item__info_add {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .trick-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .rabana-item__subtitle {
+    font-size: 32px;
+    line-height: 30px;
+  }
+
+  .reviews-desc {
+    font-size: 16px;
+    max-width: 540px;
+    margin-top: 20px;
+  }
+
+  .need__wrap {
+    width: 100%;
+  }
+
+  .about-top {
+    background: none;
+    padding-bottom: 0;
+  }
+
+  .about-top-list {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .about-top-list__title {
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .tab-label__title {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .tab-label__subtitle {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .tab-label__time {
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  .tab-content_4 {
+    padding-bottom: 0;
+  }
+
+  .tab-content__item-info {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .tab-content-list__item {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 5px;
+  }
+
+  .tab-content__item-info:last-child {
+    margin-bottom: 20px;
+  }
+
+  .homework-result__title {
+    font-size: 1.8rem;
+    line-height: 22.5px;
+    margin-bottom: 20px;
+  }
+
+  .homework-task {
+    margin-bottom: 20px;
+  }
+
+  .homework1-owl-carousel.owl-theme .owl-nav {
+    max-width: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .task-1__text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 150%;
+  }
+
+  .task-1__title {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .task-1__info {
+    max-width: 539px;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 60px;
+  }
+
+  .task-1__info::before {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .certificate-info__desc {
+    font-size: 1.6rem;
+  }
+
+  .platform__subtitle {
+    max-width: 540px;
+    font-size: 1.6rem;
+    line-height: 150%;
+  }
+
+  .platform-item__info-title {
+    font-size: 1.6rem;
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
+
+  .platform-item__info-desc {
+    font-size: 1.2rem;
+    line-height: 150%;
+  }
+
+  .guarantee-info__desc {
+    max-width: 540px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+  }
+
+  .questions-item__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .questions-item__info,
+  .questions-item__link {
+    font-size: 1.2rem;
+    line-height: 150%;
+  }
+
+
+}
+
+@media only screen and (max-width: 540px) {
+  .intro {
+    background-size: cover;
+  }
+
+  .intro-feature {
+    width: 100%;
+  }
+
+  .intro-reviews {
+    margin-bottom: 20px;
+  }
+
+  .online-course__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .learn-item,
+  .for-item {
+    width: 100%;
+  }
+
+  .author {
+    margin-bottom: 20px;
+  }
+
+  .rate-item {
+    width: 100%;
+  }
+
+  .homework1-owl-carousel.owl-theme .owl-nav {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 410px) {
 
@@ -2498,8 +2825,9 @@ input:checked~.tab-content {
     flex-wrap: nowrap;
   }
 
-  .header__logo img {
-    max-width: 90%;
+  .intro-title__main,
+  .intro-title__color {
+    font-size: 3rem;
   }
 
   .nav-order {
@@ -2510,5 +2838,46 @@ input:checked~.tab-content {
   .level-slider {
     max-width: 90%;
     margin: 0 auto;
+  }
+
+  .platform {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .rabana-item {
+    width: 100%;
+  }
+
+  .for-item__title {
+    font-size: 16px;
+  }
+
+  .for-item__info,
+  .rabana-list__item {
+    font-size: 14px;
+  }
+
+  .reviews-slide-box_text {
+    padding: 0;
+  }
+
+  .form-test {
+    padding: 10px;
+  }
+
+  .platform-item__img,
+  .platform-item__info {
+    width: 100%;
+  }
+
+  .questions-item__title {
+    font-size: 1.8rem;
+  }
+
+  .questions-item__info,
+  .questions-item__link {
+    font-size: 1.1rem;
+    ;
   }
 }
